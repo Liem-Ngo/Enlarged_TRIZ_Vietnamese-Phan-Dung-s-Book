@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chương 3 SÁNG TẠO MỘT CÁCH TỰ NHIÊN | SÁNG TẠO VÀ ĐỔI MỚI (TRIZ)</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chương 3 SÁNG TẠO MỘT CÁCH TỰ NHIÊN | SÁNG TẠO VÀ ĐỔI MỚI (TRIZ)" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chương 3 SÁNG TẠO MỘT CÁCH TỰ NHIÊN | SÁNG TẠO VÀ ĐỔI MỚI (TRIZ)" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  
+
+<meta name="author" content="Phan Dung" />
+
+
+<meta name="date" content="2022-05-05" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="mở-đầu.html"/>
+<link rel="next" href="phương-pháp-luận-sáng-tạo-và-đổi-mới-là-gì-tại-sao.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Enlarged TRIZ</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> url: your book url like <span>https://bookdown.org/yihui/bookdown</span></a></li>
+<li class="chapter" data-level="2" data-path="mở-đầu.html"><a href="mở-đầu.html"><i class="fa fa-check"></i><b>2</b> MỞ ĐẦU</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="mở-đầu.html"><a href="mở-đầu.html#sec:1:1:"><i class="fa fa-check"></i><b>2.1</b> Vai trò của khái niệm</a></li>
+<li class="chapter" data-level="2.2" data-path="mở-đầu.html"><a href="mở-đầu.html#sec:1:2:"><i class="fa fa-check"></i><b>2.2</b> Một số khái niệm cơ bản và các ý nghĩa của chúng</a></li>
+<li class="chapter" data-level="2.3" data-path="mở-đầu.html"><a href="mở-đầu.html#sec:1:3:"><i class="fa fa-check"></i><b>2.3</b> Sáng tạo của con người: Nhìn từ nhiều góc độ</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="sáng-tạo-một-cách-tự-nhiên.html"><a href="sáng-tạo-một-cách-tự-nhiên.html"><i class="fa fa-check"></i><b>3</b> SÁNG TẠO MỘT CÁCH TỰ NHIÊN</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="sáng-tạo-một-cách-tự-nhiên.html"><a href="sáng-tạo-một-cách-tự-nhiên.html#sec:2:1:"><i class="fa fa-check"></i><b>3.1</b> Tư duy sáng tạo: nghịch lý, nghịch lý và nghịch lý</a></li>
+<li class="chapter" data-level="3.2" data-path="sáng-tạo-một-cách-tự-nhiên.html"><a href="sáng-tạo-một-cách-tự-nhiên.html#sec:2:2:"><i class="fa fa-check"></i><b>3.2</b> Phương pháp thử và sai (Trial and Error Method)</a></li>
+<li class="chapter" data-level="3.3" data-path="sáng-tạo-một-cách-tự-nhiên.html"><a href="sáng-tạo-một-cách-tự-nhiên.html#sec:2:3:"><i class="fa fa-check"></i><b>3.3</b> Các ưu và nhược điểm của phương pháp thử và sai</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="sáng-tạo-một-cách-tự-nhiên.html"><a href="sáng-tạo-một-cách-tự-nhiên.html#subsec:2:3:1:"><i class="fa fa-check"></i><b>3.3.1</b> Các ưu điểm của phương pháp thử và sai</a></li>
+<li class="chapter" data-level="3.3.2" data-path="sáng-tạo-một-cách-tự-nhiên.html"><a href="sáng-tạo-một-cách-tự-nhiên.html#subsec:2:3:2:"><i class="fa fa-check"></i><b>3.3.2</b> Các nhược điểm của phương pháp thử và sai</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="phương-pháp-luận-sáng-tạo-và-đổi-mới-là-gì-tại-sao.html"><a href="phương-pháp-luận-sáng-tạo-và-đổi-mới-là-gì-tại-sao.html"><i class="fa fa-check"></i><b>4</b> PHƯƠNG PHÁP LUẬN SÁNG TẠO VÀ ĐỔI MỚI LÀ GÌ? TẠI SAO?</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="phương-pháp-luận-sáng-tạo-và-đổi-mới-là-gì-tại-sao.html"><a href="phương-pháp-luận-sáng-tạo-và-đổi-mới-là-gì-tại-sao.html#sec:3:1:"><i class="fa fa-check"></i><b>4.1</b> Từ Heuristics đến Creatology: Vài nét lịch sử</a></li>
+<li class="chapter" data-level="4.2" data-path="phương-pháp-luận-sáng-tạo-và-đổi-mới-là-gì-tại-sao.html"><a href="phương-pháp-luận-sáng-tạo-và-đổi-mới-là-gì-tại-sao.html#sec:3:2:"><i class="fa fa-check"></i><b>4.2</b> Phương pháp luận sáng tạo và đổi mới (PPLSTVĐM) là gì?</a></li>
+<li class="chapter" data-level="4.3" data-path="phương-pháp-luận-sáng-tạo-và-đổi-mới-là-gì-tại-sao.html"><a href="phương-pháp-luận-sáng-tạo-và-đổi-mới-là-gì-tại-sao.html#sec:3:3:"><i class="fa fa-check"></i><b>4.3</b> Tại sao cần có Phương pháp luận sáng tạo và đổi mới (PPLSTVĐM)?</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="phương-pháp-luận-sáng-tạo-và-đổi-mới-là-gì-tại-sao.html"><a href="phương-pháp-luận-sáng-tạo-và-đổi-mới-là-gì-tại-sao.html#subsec:3:3:1:"><i class="fa fa-check"></i><b>4.3.1</b> Nhu cầu xã hội đối với PPLSTVĐM</a></li>
+<li class="chapter" data-level="4.3.2" data-path="phương-pháp-luận-sáng-tạo-và-đổi-mới-là-gì-tại-sao.html"><a href="phương-pháp-luận-sáng-tạo-và-đổi-mới-là-gì-tại-sao.html#subsec:3:3:2:"><i class="fa fa-check"></i><b>4.3.2</b> Các khuynh hướng, thách thức và hệ quả</a></li>
+<li class="chapter" data-level="4.3.3" data-path="phương-pháp-luận-sáng-tạo-và-đổi-mới-là-gì-tại-sao.html"><a href="phương-pháp-luận-sáng-tạo-và-đổi-mới-là-gì-tại-sao.html#subsec:3:3:3:"><i class="fa fa-check"></i><b>4.3.3</b> Nguyên nhân thành công ở thế kỷ 21: Sáng tạo và đổi mới – Tri thức</a></li>
+<li class="chapter" data-level="4.3.4" data-path="phương-pháp-luận-sáng-tạo-và-đổi-mới-là-gì-tại-sao.html"><a href="phương-pháp-luận-sáng-tạo-và-đổi-mới-là-gì-tại-sao.html#subsec:3:3:4:"><i class="fa fa-check"></i><b>4.3.4</b> Giáo dục và đào tạo của tương lai: Vài nét phác thảo</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html"><a href="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html"><i class="fa fa-check"></i><b>5</b> TỔNG QUAN CÁC KẾT QUẢ ĐẠT ĐƯỢC TRONG LĨNH VỰC PHƯƠNG PHÁP LUẬN SÁNG TẠO VÀ ĐỔI MỚI (PPLSTVĐM)</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html"><a href="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html#sec:4:1:"><i class="fa fa-check"></i><b>5.1</b> Một số cách tiếp cận truyền thống và kết quả</a></li>
+<li class="chapter" data-level="5.2" data-path="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html"><a href="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html#sec:4:2:"><i class="fa fa-check"></i><b>5.2</b> Cách tiếp cận TRIZ: Các ý tưởng cơ bản</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html"><a href="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html#subsec:4:2:1:"><i class="fa fa-check"></i><b>5.2.1</b> Các quy luật sáng tạo phải tìm chính là các quy luật phát triển</a></li>
+<li class="chapter" data-level="5.2.2" data-path="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html"><a href="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html#subsec:4:2:2:"><i class="fa fa-check"></i><b>5.2.2</b> Sáng tạo của con người: Khía cạnh chủ quan và khía cạnh khách quan</a></li>
+<li class="chapter" data-level="5.2.3" data-path="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html"><a href="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html#subsec:4:2:3:"><i class="fa fa-check"></i><b>5.2.3</b> Cơ chế định hướng và tư duy định hướng</a></li>
+<li class="chapter" data-level="5.2.4" data-path="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html"><a href="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html#subsec:4:2:4:"><i class="fa fa-check"></i><b>5.2.4</b> Phát triển của con người: Năng lực cơ thể hay/và công cụ</a></li>
+<li class="chapter" data-level="5.2.5" data-path="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html"><a href="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html#subsec:4:2:5:"><i class="fa fa-check"></i><b>5.2.5</b> Quan hệ giữa tài năng và công cụ</a></li>
+<li class="chapter" data-level="5.2.6" data-path="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html"><a href="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html#subsec:4:2:6:"><i class="fa fa-check"></i><b>5.2.6</b> Các mức sáng tạo – các mức khó của bài toán</a></li>
+<li class="chapter" data-level="5.2.7" data-path="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html"><a href="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html#subsec:4:2:7:"><i class="fa fa-check"></i><b>5.2.7</b> Sáng tạo mức cao: Cuộc chạy tiếp sức của phương pháp thử và sai, và sự cần thiết sáng chế ra PPLSTVĐM</a></li>
+<li class="chapter" data-level="5.2.8" data-path="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html"><a href="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html#subsec:4:2:8:"><i class="fa fa-check"></i><b>5.2.8</b> TRIZ: Các yêu cầu đối với PPLSTVĐM</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html"><a href="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html#sec:4:3:"><i class="fa fa-check"></i><b>5.3</b> Các nguồn thông tin và tri thức của TRIZ</a></li>
+<li class="chapter" data-level="5.4" data-path="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html"><a href="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html#sec:4:4:"><i class="fa fa-check"></i><b>5.4</b> Sơ đồ khối TRIZ</a></li>
+<li class="chapter" data-level="5.5" data-path="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html"><a href="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html#sec:4:5:"><i class="fa fa-check"></i><b>5.5</b> Mở rộng TRIZ và dạy TRIZ mở rộng cho đông đảo mọi người</a></li>
+<li class="chapter" data-level="5.6" data-path="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html"><a href="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html#sec:4:6:"><i class="fa fa-check"></i><b>5.6</b> Một số kết quả mở rộng TRIZ và dạy TRIZ mở rộng cho đông đảo mọi người</a></li>
+<li class="chapter" data-level="" data-path="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html"><a href="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html#what-is-triz"><i class="fa fa-check"></i>WHAT IS TRIZ?</a></li>
+<li class="chapter" data-level="" data-path="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html"><a href="tổng-quan-các-kết-quả-đạt-được-trong-lĩnh-vực-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm.html#what-does-triz-do-for-business"><i class="fa fa-check"></i>WHAT DOES TRIZ DO FOR BUSINESS?</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="từ-nhu-cầu-đến-hành-động-và-ngược-lại.html"><a href="từ-nhu-cầu-đến-hành-động-và-ngược-lại.html"><i class="fa fa-check"></i><b>6</b> Từ nhu cầu đến hành động và ngược lại</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="từ-nhu-cầu-đến-hành-động-và-ngược-lại.html"><a href="từ-nhu-cầu-đến-hành-động-và-ngược-lại.html#sec:5:1:"><i class="fa fa-check"></i><b>6.1</b> Mở đầu</a></li>
+<li class="chapter" data-level="6.2" data-path="từ-nhu-cầu-đến-hành-động-và-ngược-lại.html"><a href="từ-nhu-cầu-đến-hành-động-và-ngược-lại.html#sec:5:2:"><i class="fa fa-check"></i><b>6.2</b> Các nhu cầu của cá nhân</a></li>
+<li class="chapter" data-level="6.3" data-path="từ-nhu-cầu-đến-hành-động-và-ngược-lại.html"><a href="từ-nhu-cầu-đến-hành-động-và-ngược-lại.html#sec:5:3:"><i class="fa fa-check"></i><b>6.3</b> Hành động</a></li>
+<li class="chapter" data-level="6.4" data-path="từ-nhu-cầu-đến-hành-động-và-ngược-lại.html"><a href="từ-nhu-cầu-đến-hành-động-và-ngược-lại.html#sec:5:4:"><i class="fa fa-check"></i><b>6.4</b> Xúc cảm</a></li>
+<li class="chapter" data-level="6.5" data-path="từ-nhu-cầu-đến-hành-động-và-ngược-lại.html"><a href="từ-nhu-cầu-đến-hành-động-và-ngược-lại.html#sec:5:5:"><i class="fa fa-check"></i><b>6.5</b> Các thói quen tự nguyện</a></li>
+<li class="chapter" data-level="6.6" data-path="từ-nhu-cầu-đến-hành-động-và-ngược-lại.html"><a href="từ-nhu-cầu-đến-hành-động-và-ngược-lại.html#sec:5:6:"><i class="fa fa-check"></i><b>6.6</b> Ý thức, tiềm thức và vô thức</a></li>
+<li class="chapter" data-level="6.7" data-path="từ-nhu-cầu-đến-hành-động-và-ngược-lại.html"><a href="từ-nhu-cầu-đến-hành-động-và-ngược-lại.html#sec:5:7:"><i class="fa fa-check"></i><b>6.7</b> Mô hình nhu cầu – hành động và các khả năng của tư duy</a>
+<ul>
+<li class="chapter" data-level="6.7.1" data-path="từ-nhu-cầu-đến-hành-động-và-ngược-lại.html"><a href="từ-nhu-cầu-đến-hành-động-và-ngược-lại.html#subsec:5:7:1:"><i class="fa fa-check"></i><b>6.7.1</b> Mô hình nhu cầu – hành động</a></li>
+<li class="chapter" data-level="6.7.2" data-path="từ-nhu-cầu-đến-hành-động-và-ngược-lại.html"><a href="từ-nhu-cầu-đến-hành-động-và-ngược-lại.html#subsec:5:7:2:"><i class="fa fa-check"></i><b>6.7.2</b> Tình hình tư duy giải quyết vấn đề và hành động đổi mới ở phần lớn mọi người hiện nay</a></li>
+<li class="chapter" data-level="6.7.3" data-path="từ-nhu-cầu-đến-hành-động-và-ngược-lại.html"><a href="từ-nhu-cầu-đến-hành-động-và-ngược-lại.html#subsec:5:7:3:"><i class="fa fa-check"></i><b>6.7.3</b> Mối quan hệ giữa tư duy và các yếu tố độc lập khác</a></li>
+<li class="chapter" data-level="6.7.4" data-path="từ-nhu-cầu-đến-hành-động-và-ngược-lại.html"><a href="từ-nhu-cầu-đến-hành-động-và-ngược-lại.html#subsec:5:7:4:"><i class="fa fa-check"></i><b>6.7.4</b> Các khả năng to lớn của tư duy</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><i class="fa fa-check"></i><b>7</b> Tư duy sáng tạo: Nhìn theo góc độ thông tin – tâm lý</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html#sec:6:1:"><i class="fa fa-check"></i><b>7.1</b> Mở đầu</a></li>
+<li class="chapter" data-level="7.2" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html#sec:6:2:"><i class="fa fa-check"></i><b>7.2</b> Mô hình quá trình suy nghĩ giải quyết vấn đề và ra quyết định</a></li>
+<li class="chapter" data-level="7.3" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html#sec:6:3:"><i class="fa fa-check"></i><b>7.3</b> Quá trình truyền và biến đổi thông tin</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html#subsec:6:3:1:"><i class="fa fa-check"></i><b>7.3.1</b> Thông tin</a></li>
+<li class="chapter" data-level="7.3.2" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html#subsec:6:3:2:"><i class="fa fa-check"></i><b>7.3.2</b> Chuỗi truyền thông tin</a></li>
+<li class="chapter" data-level="7.3.3" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html#subsec:6:3:3:"><i class="fa fa-check"></i><b>7.3.3</b> Một số điểm cần lưu ý để thông tin truyền thông suốt</a></li>
+<li class="chapter" data-level="7.3.4" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html#subsec:6:3:4:"><i class="fa fa-check"></i><b>7.3.4</b> Các ích lợi và hạn chế của lý thuyết thông tin đối với tư duy sáng tạo</a></li>
+<li class="chapter" data-level="7.3.5" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html#subsec:6:3:5:"><i class="fa fa-check"></i><b>7.3.5</b> Máy tính giải quyết vấn đề và tư duy sáng tạo</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html#sec:6:4:"><i class="fa fa-check"></i><b>7.4</b> Các hiện tượng tâm lý tham gia vào quá trình biến đổi thông tin thành tri thức</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html#subsec:6:4:1:"><i class="fa fa-check"></i><b>7.4.1</b> Trí nhớ</a></li>
+<li class="chapter" data-level="7.4.2" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html#subsec:6:4:2:"><i class="fa fa-check"></i><b>7.4.2</b> Tiếp thu thông tin và các mức độ hiểu</a></li>
+<li class="chapter" data-level="7.4.3" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html#subsec:6:4:3:"><i class="fa fa-check"></i><b>7.4.3</b> Ngôn ngữ, ký hiệu, hình vẽ</a></li>
+<li class="chapter" data-level="7.4.4" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html#subsec:6:4:4:"><i class="fa fa-check"></i><b>7.4.4</b> Xử lý thông tin</a></li>
+<li class="chapter" data-level="7.4.5" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html#subsec:6:4:5:"><i class="fa fa-check"></i><b>7.4.5</b> Tính nhạy bén của tư duy_</a></li>
+<li class="chapter" data-level="7.4.6" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html#subsec:6:4:6:"><i class="fa fa-check"></i><b>7.4.6</b> Liên tưởng</a></li>
+<li class="chapter" data-level="7.4.7" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html#subsec:6:4:7:"><i class="fa fa-check"></i><b>7.4.7</b> Tìm thông tin ý tưởng</a></li>
+<li class="chapter" data-level="7.4.8" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html#subsec:6:4:8:"><i class="fa fa-check"></i><b>7.4.8</b> Linh tính</a></li>
+<li class="chapter" data-level="7.4.9" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html#subsec:6:4:9:"><i class="fa fa-check"></i><b>7.4.9</b> Trí tưởng tượng</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html#sec:6:5:"><i class="fa fa-check"></i><b>7.5</b> Tính ì tâm lý</a>
+<ul>
+<li class="chapter" data-level="7.5.1" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html#subsec:6:5:1:"><i class="fa fa-check"></i><b>7.5.1</b> Tính ì tâm lý: Các nhận xét chung</a></li>
+<li class="chapter" data-level="7.5.2" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html#subsec:6:5:2:"><i class="fa fa-check"></i><b>7.5.2</b> Tính ì tâm lý: Vật cản trong tư duy sáng tạo và đổi mới</a></li>
+<li class="chapter" data-level="7.5.3" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html#subsec:6:5:3:"><i class="fa fa-check"></i><b>7.5.3</b> Tính ì tâm lý do ức chế (Tính ì tâm lý “thiếu”)</a></li>
+<li class="chapter" data-level="7.5.4" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html#subsec:6:5:4:"><i class="fa fa-check"></i><b>7.5.4</b> Tính ì tâm lý do ngoại suy ra ngoài phạm vi áp dụng (Tính ì tâm lý “thừa”)</a></li>
+<li class="chapter" data-level="7.5.5" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html#subsec:6:5:5:"><i class="fa fa-check"></i><b>7.5.5</b> Tính thiếu tự tin, rụt rè đối với sáng tạo (Tính ì tâm lý tự ti)</a></li>
+<li class="chapter" data-level="7.5.6" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html#subsec:6:5:6:"><i class="fa fa-check"></i><b>7.5.6</b> Chủ động sống chung và khắc phục tính ì tâm lý</a></li>
+</ul></li>
+<li class="chapter" data-level="7.6" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html#sec:6:6:"><i class="fa fa-check"></i><b>7.6</b> Phát hiện và bồi dưỡng các năng lực sáng tạo</a>
+<ul>
+<li class="chapter" data-level="7.6.1" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html#subsec:6:6:1:"><i class="fa fa-check"></i><b>7.6.1</b> Phát hiện các năng lực sáng tạo</a></li>
+<li class="chapter" data-level="7.6.2" data-path="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html"><a href="tư-duy-sáng-tạo-nhìn-theo-góc-độ-thông-tin-tâm-lý.html#subsec:6:6:2:"><i class="fa fa-check"></i><b>7.6.2</b> Bồi dưỡng các năng lực sáng tạo</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="điều-khiển-học-điều-khiển-hành-động-và-thế-giới-bên-trong-con-người-sáng-tạo.html"><a href="điều-khiển-học-điều-khiển-hành-động-và-thế-giới-bên-trong-con-người-sáng-tạo.html"><i class="fa fa-check"></i><b>8</b> Điều khiển học: Điều khiển hành động và thế giới bên trong con người sáng tạo</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="điều-khiển-học-điều-khiển-hành-động-và-thế-giới-bên-trong-con-người-sáng-tạo.html"><a href="điều-khiển-học-điều-khiển-hành-động-và-thế-giới-bên-trong-con-người-sáng-tạo.html#sec:7:1:"><i class="fa fa-check"></i><b>8.1</b> Mở đầu</a></li>
+<li class="chapter" data-level="8.2" data-path="điều-khiển-học-điều-khiển-hành-động-và-thế-giới-bên-trong-con-người-sáng-tạo.html"><a href="điều-khiển-học-điều-khiển-hành-động-và-thế-giới-bên-trong-con-người-sáng-tạo.html#sec:7:2:"><i class="fa fa-check"></i><b>8.2</b> Điều khiển học: Một số ý tưởng cơ bản chung</a></li>
+<li class="chapter" data-level="8.3" data-path="điều-khiển-học-điều-khiển-hành-động-và-thế-giới-bên-trong-con-người-sáng-tạo.html"><a href="điều-khiển-học-điều-khiển-hành-động-và-thế-giới-bên-trong-con-người-sáng-tạo.html#sec:7:3:"><i class="fa fa-check"></i><b>8.3</b> Con người và môi trường: Điều khiển hành động của con người sáng tạo</a></li>
+<li class="chapter" data-level="8.4" data-path="điều-khiển-học-điều-khiển-hành-động-và-thế-giới-bên-trong-con-người-sáng-tạo.html"><a href="điều-khiển-học-điều-khiển-hành-động-và-thế-giới-bên-trong-con-người-sáng-tạo.html#sec:7:4:"><i class="fa fa-check"></i><b>8.4</b> Giáo dục phát triển nhân cách: Điều khiển và tự điều khiển thế giới bên trong con người sáng tạo</a>
+<ul>
+<li class="chapter" data-level="8.4.1" data-path="điều-khiển-học-điều-khiển-hành-động-và-thế-giới-bên-trong-con-người-sáng-tạo.html"><a href="điều-khiển-học-điều-khiển-hành-động-và-thế-giới-bên-trong-con-người-sáng-tạo.html#subsec:7:4:1:"><i class="fa fa-check"></i><b>8.4.1</b> Nhân cách</a></li>
+<li class="chapter" data-level="8.4.2" data-path="điều-khiển-học-điều-khiển-hành-động-và-thế-giới-bên-trong-con-người-sáng-tạo.html"><a href="điều-khiển-học-điều-khiển-hành-động-và-thế-giới-bên-trong-con-người-sáng-tạo.html#subsec:7:4:2:"><i class="fa fa-check"></i><b>8.4.2</b> Phát triển nhân cách: Hệ điều khiển, hệ bị điều khiển và môi trường xã hội</a></li>
+<li class="chapter" data-level="8.4.3" data-path="điều-khiển-học-điều-khiển-hành-động-và-thế-giới-bên-trong-con-người-sáng-tạo.html"><a href="điều-khiển-học-điều-khiển-hành-động-và-thế-giới-bên-trong-con-người-sáng-tạo.html#subsec:7:4:3:"><i class="fa fa-check"></i><b>8.4.3</b> Phát triển nhân cách: Xây dựng và thực hiện chương trình điều khiển</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="điều-khiển-học-điều-khiển-hành-động-và-thế-giới-bên-trong-con-người-sáng-tạo.html"><a href="điều-khiển-học-điều-khiển-hành-động-và-thế-giới-bên-trong-con-người-sáng-tạo.html#sec:7:5:"><i class="fa fa-check"></i><b>8.5</b> Phát triển nhân cách sáng tạo: Vai trò của phương pháp luận sáng tạo và đổi mới</a>
+<ul>
+<li class="chapter" data-level="8.5.1" data-path="điều-khiển-học-điều-khiển-hành-động-và-thế-giới-bên-trong-con-người-sáng-tạo.html"><a href="điều-khiển-học-điều-khiển-hành-động-và-thế-giới-bên-trong-con-người-sáng-tạo.html#subsec:7:5:1:"><i class="fa fa-check"></i><b>8.5.1</b> Nhân cách sáng tạo</a></li>
+<li class="chapter" data-level="8.5.2" data-path="điều-khiển-học-điều-khiển-hành-động-và-thế-giới-bên-trong-con-người-sáng-tạo.html"><a href="điều-khiển-học-điều-khiển-hành-động-và-thế-giới-bên-trong-con-người-sáng-tạo.html#subsec:7:5:2:"><i class="fa fa-check"></i><b>8.5.2</b> Giáo dục phát triển nhân cách sáng tạo</a></li>
+<li class="chapter" data-level="8.5.3" data-path="điều-khiển-học-điều-khiển-hành-động-và-thế-giới-bên-trong-con-người-sáng-tạo.html"><a href="điều-khiển-học-điều-khiển-hành-động-và-thế-giới-bên-trong-con-người-sáng-tạo.html#subsec:7:5:3:"><i class="fa fa-check"></i><b>8.5.3</b> Vai trò của phương pháp luận sáng tạo đối với giáo dục phát triển nhân cách sáng tạo</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="tư-duy-lôgích.html"><a href="tư-duy-lôgích.html"><i class="fa fa-check"></i><b>9</b> TƯ DUY LÔGÍCH</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="tư-duy-lôgích.html"><a href="tư-duy-lôgích.html#sec:8:1:"><i class="fa fa-check"></i><b>9.1</b> Mở đầu</a></li>
+<li class="chapter" data-level="9.2" data-path="tư-duy-lôgích.html"><a href="tư-duy-lôgích.html#sec:8:2:"><i class="fa fa-check"></i><b>9.2</b> Các quy luật cơ bản của lôgích hình thức</a></li>
+<li class="chapter" data-level="9.3" data-path="tư-duy-lôgích.html"><a href="tư-duy-lôgích.html#sec:8:3:"><i class="fa fa-check"></i><b>9.3</b> Khái niệm</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="tư-duy-lôgích.html"><a href="tư-duy-lôgích.html#subsec:8:3:1:"><i class="fa fa-check"></i><b>9.3.1</b> Nội hàm, ngoại diên, mở rộng và thu hẹp khái niệm</a></li>
+<li class="chapter" data-level="9.3.2" data-path="tư-duy-lôgích.html"><a href="tư-duy-lôgích.html#subsec:8:3:2:"><i class="fa fa-check"></i><b>9.3.2</b> Quan hệ giữa các khái niệm theo ngoại diên</a></li>
+<li class="chapter" data-level="9.3.3" data-path="tư-duy-lôgích.html"><a href="tư-duy-lôgích.html#subsec:8:3:3:"><i class="fa fa-check"></i><b>9.3.3</b> Định nghĩa khái niệm</a></li>
+<li class="chapter" data-level="9.3.4" data-path="tư-duy-lôgích.html"><a href="tư-duy-lôgích.html#subsec:8:3:4:"><i class="fa fa-check"></i><b>9.3.4</b> Phân chia khái niệm</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="tư-duy-lôgích.html"><a href="tư-duy-lôgích.html#sec:8:4:"><i class="fa fa-check"></i><b>9.4</b> Phán đoán</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="tư-duy-lôgích.html"><a href="tư-duy-lôgích.html#subsec:8:4:1:"><i class="fa fa-check"></i><b>9.4.1</b> Định nghĩa, cấu trúc và hình thức ngôn ngữ của phán đoán</a></li>
+<li class="chapter" data-level="9.4.2" data-path="tư-duy-lôgích.html"><a href="tư-duy-lôgích.html#subsec:8:4:2:"><i class="fa fa-check"></i><b>9.4.2</b> Các loại phán đoán</a></li>
+<li class="chapter" data-level="9.4.3" data-path="tư-duy-lôgích.html"><a href="tư-duy-lôgích.html#subsec:8:4:3:"><i class="fa fa-check"></i><b>9.4.3</b> Quan hệ giữa các phán đoán cơ bản</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="tư-duy-lôgích.html"><a href="tư-duy-lôgích.html#sec:8:5:"><i class="fa fa-check"></i><b>9.5</b> Suy luận</a>
+<ul>
+<li class="chapter" data-level="9.5.1" data-path="tư-duy-lôgích.html"><a href="tư-duy-lôgích.html#subsec:8:5:1:"><i class="fa fa-check"></i><b>9.5.1</b> Định nghĩa, cấu trúc và các dạng suy luận</a></li>
+<li class="chapter" data-level="9.5.2" data-path="tư-duy-lôgích.html"><a href="tư-duy-lôgích.html#subsec:8:5:2:"><i class="fa fa-check"></i><b>9.5.2</b> Suy luận diễn dịch</a></li>
+<li class="chapter" data-level="9.5.3" data-path="tư-duy-lôgích.html"><a href="tư-duy-lôgích.html#subsec:8:5:3:"><i class="fa fa-check"></i><b>9.5.3</b> Suy luận quy nạp</a></li>
+<li class="chapter" data-level="9.5.4" data-path="tư-duy-lôgích.html"><a href="tư-duy-lôgích.html#subsec:8:5:4:"><i class="fa fa-check"></i><b>9.5.4</b> Quan hệ giữa suy luận diễn dịch và suy luận quy nạp</a></li>
+</ul></li>
+<li class="chapter" data-level="9.6" data-path="tư-duy-lôgích.html"><a href="tư-duy-lôgích.html#sec:8:6:"><i class="fa fa-check"></i><b>9.6</b> Tư duy lôgích: Sử dụng lôgích hình thức trong suy nghĩ giải quyết vấn đề và ra quyết định</a>
+<ul>
+<li class="chapter" data-level="9.6.1" data-path="tư-duy-lôgích.html"><a href="tư-duy-lôgích.html#subsec:8:6:1:"><i class="fa fa-check"></i><b>9.6.1</b> Những nhận xét chung</a></li>
+<li class="chapter" data-level="9.6.2" data-path="tư-duy-lôgích.html"><a href="tư-duy-lôgích.html#subsec:8:6:2:"><i class="fa fa-check"></i><b>9.6.2</b> Thông tin: Luận ý thông thường và luận ý lôgích</a></li>
+<li class="chapter" data-level="9.6.3" data-path="tư-duy-lôgích.html"><a href="tư-duy-lôgích.html#subsec:8:6:3:"><i class="fa fa-check"></i><b>9.6.3</b> Tư duy lôgích: Người thu và phát thông tin</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="tư-duy-biện-chứng.html"><a href="tư-duy-biện-chứng.html"><i class="fa fa-check"></i><b>10</b> TƯ DUY BIỆN CHỨNG</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="tư-duy-biện-chứng.html"><a href="tư-duy-biện-chứng.html#sec:9:1:"><i class="fa fa-check"></i><b>10.1</b> Mở đầu</a></li>
+<li class="chapter" data-level="10.2" data-path="tư-duy-biện-chứng.html"><a href="tư-duy-biện-chứng.html#sec:9:2:"><i class="fa fa-check"></i><b>10.2</b> Phép biện chứng: Nguyên lý và các quy luật cơ bản về sự phát triển</a>
+<ul>
+<li class="chapter" data-level="10.2.1" data-path="tư-duy-biện-chứng.html"><a href="tư-duy-biện-chứng.html#subsec:9:2:1:"><i class="fa fa-check"></i><b>10.2.1</b> Nguyên lý về sự phát triển của phép biện chứng</a></li>
+<li class="chapter" data-level="10.2.2" data-path="tư-duy-biện-chứng.html"><a href="tư-duy-biện-chứng.html#subsec:9:2:2:"><i class="fa fa-check"></i><b>10.2.2</b> Các quy luật cơ bản của phép biện chứng</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="tư-duy-biện-chứng.html"><a href="tư-duy-biện-chứng.html#sec:9:3:"><i class="fa fa-check"></i><b>10.3</b> Về việc áp dụng phép biện chứng vào lĩnh vực sáng tạo và đổi mới</a></li>
+<li class="chapter" data-level="10.4" data-path="tư-duy-biện-chứng.html"><a href="tư-duy-biện-chứng.html#sec:9:4:"><i class="fa fa-check"></i><b>10.4</b> Tư duy biện chứng trong lĩnh vực sáng tạo và đổi mới</a>
+<ul>
+<li class="chapter" data-level="10.4.1" data-path="tư-duy-biện-chứng.html"><a href="tư-duy-biện-chứng.html#subsec:9:4:1:"><i class="fa fa-check"></i><b>10.4.1</b> Tư duy biện chứng: Nghĩa rộng và nghĩa hẹp</a></li>
+<li class="chapter" data-level="10.4.2" data-path="tư-duy-biện-chứng.html"><a href="tư-duy-biện-chứng.html#subsec:9:4:2:"><i class="fa fa-check"></i><b>10.4.2</b> TRIZ: Các loại mâu thuẫn trong giải quyết vấn đề và ra quyết định</a></li>
+<li class="chapter" data-level="10.4.3" data-path="tư-duy-biện-chứng.html"><a href="tư-duy-biện-chứng.html#subsec:9:4:3:"><i class="fa fa-check"></i><b>10.4.3</b> Về mối quan hệ, vai trò, ý nghĩa của các loại mâu thuẫn trong giải quyết vấn đề và ra quyết định</a></li>
+</ul></li>
+<li class="chapter" data-level="10.5" data-path="tư-duy-biện-chứng.html"><a href="tư-duy-biện-chứng.html#sec:9:5:"><i class="fa fa-check"></i><b>10.5</b> Phân tích một số ví dụ, nhìn dưới quan điểm về mâu thuẫn và sử dụng các công cụ của TRIZ để giải quyết mâu thuẫn</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="tư-duy-hệ-thống.html"><a href="tư-duy-hệ-thống.html"><i class="fa fa-check"></i><b>11</b> TƯ DUY HỆ THỐNG</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="tư-duy-hệ-thống.html"><a href="tư-duy-hệ-thống.html#sec:10:1:"><i class="fa fa-check"></i><b>11.1</b> Mở đầu</a></li>
+<li class="chapter" data-level="11.2" data-path="tư-duy-hệ-thống.html"><a href="tư-duy-hệ-thống.html#sec:10:2:"><i class="fa fa-check"></i><b>11.2</b> Một số khái niệm cơ bản và những điều cần lưu ý về tư duy hệ thống</a>
+<ul>
+<li class="chapter" data-level="11.2.1" data-path="tư-duy-hệ-thống.html"><a href="tư-duy-hệ-thống.html#subsec:10:2:1:"><i class="fa fa-check"></i><b>11.2.1</b> Một số khái niệm cơ bản và ý tưởng chung về hệ thống</a></li>
+<li class="chapter" data-level="11.2.2" data-path="tư-duy-hệ-thống.html"><a href="tư-duy-hệ-thống.html#subsec:10:2:2:"><i class="fa fa-check"></i><b>11.2.2</b> Những điểm cần lưu ý về tư duy hệ thống</a></li>
+</ul></li>
+<li class="chapter" data-level="11.3" data-path="tư-duy-hệ-thống.html"><a href="tư-duy-hệ-thống.html#sec:10:3:"><i class="fa fa-check"></i><b>11.3</b> Tính ì hệ thống và những điểm cần lưu ý</a>
+<ul>
+<li class="chapter" data-level="11.3.1" data-path="tư-duy-hệ-thống.html"><a href="tư-duy-hệ-thống.html#subsec:10:3:1:"><i class="fa fa-check"></i><b>11.3.1</b> Tính ì hệ thống</a></li>
+<li class="chapter" data-level="11.3.2" data-path="tư-duy-hệ-thống.html"><a href="tư-duy-hệ-thống.html#subsec:10:3:2:"><i class="fa fa-check"></i><b>11.3.2</b> Một số điểm cần lưu ý về tính ì hệ thống</a></li>
+</ul></li>
+<li class="chapter" data-level="11.4" data-path="tư-duy-hệ-thống.html"><a href="tư-duy-hệ-thống.html#sec:10:4:"><i class="fa fa-check"></i><b>11.4</b> Vai trò quan trọng của các hệ thống tương lai</a>
+<ul>
+<li class="chapter" data-level="11.4.1" data-path="tư-duy-hệ-thống.html"><a href="tư-duy-hệ-thống.html#subsec:10:4:1:"><i class="fa fa-check"></i><b>11.4.1</b> Dự báo và khoa học dự báo</a></li>
+<li class="chapter" data-level="11.4.2" data-path="tư-duy-hệ-thống.html"><a href="tư-duy-hệ-thống.html#subsec:10:4:2:"><i class="fa fa-check"></i><b>11.4.2</b> Một số phương pháp dự báo</a></li>
+</ul></li>
+<li class="chapter" data-level="11.5" data-path="tư-duy-hệ-thống.html"><a href="tư-duy-hệ-thống.html#sec:10:5:"><i class="fa fa-check"></i><b>11.5</b> Tư duy hệ thống trong giải quyết vấn đề và ra quyết định</a>
+<ul>
+<li class="chapter" data-level="11.5.1" data-path="tư-duy-hệ-thống.html"><a href="tư-duy-hệ-thống.html#subsec:10:5:1:"><i class="fa fa-check"></i><b>11.5.1</b> Tiêu chuẩn của quyết định tốt: Nhìn theo quan điểm hệ thống phát triển bền vững</a></li>
+<li class="chapter" data-level="11.5.2" data-path="tư-duy-hệ-thống.html"><a href="tư-duy-hệ-thống.html#subsec:10:5:2:"><i class="fa fa-check"></i><b>11.5.2</b> Sự cần thiết và các ích lợi của việc sử dụng tư duy hệ thống trong giải quyết vấn đề và ra quyết định</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><i class="fa fa-check"></i><b>12</b> NỘI DUNG, Ý NGHĨA VÀ CÁC ÍCH LỢI CỦA CÁC THỦ THUẬT (NGUYÊN TẮC) SÁNG TẠO CƠ BẢN</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#sec:11:1:"><i class="fa fa-check"></i><b>12.1</b> Mở đầu</a></li>
+<li class="chapter" data-level="12.2" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#sec:11:2:"><i class="fa fa-check"></i><b>12.2</b> Lời phát biểu, các thí dụ minh họa và một số nhận xét về các thủ thuật (nguyên tắc) sáng tạo cơ bản</a>
+<ul>
+<li class="chapter" data-level="12.2.1" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:1:"><i class="fa fa-check"></i><b>12.2.1</b> NGUYÊN TẮC PHÂN NHỎ</a></li>
+<li class="chapter" data-level="12.2.2" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:2:"><i class="fa fa-check"></i><b>12.2.2</b> NGUYÊN TẮC ” TÁCH KHỎI ”</a></li>
+<li class="chapter" data-level="12.2.3" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:3:"><i class="fa fa-check"></i><b>12.2.3</b> NGUYÊN TẮC PHẨM CHẤT CỤC BỘ</a></li>
+<li class="chapter" data-level="12.2.4" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:4:"><i class="fa fa-check"></i><b>12.2.4</b> NGUYÊN TẮC PHẢN (BẤT) ĐỐI XỨNG</a></li>
+<li class="chapter" data-level="12.2.5" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:5:"><i class="fa fa-check"></i><b>12.2.5</b> NGUYÊN TẮC KẾT HỢP</a></li>
+<li class="chapter" data-level="12.2.6" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:6:"><i class="fa fa-check"></i><b>12.2.6</b> NGUYÊN TẮC VẠN NĂNG</a></li>
+<li class="chapter" data-level="12.2.7" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:7:"><i class="fa fa-check"></i><b>12.2.7</b> NGUYÊN TẮC “CHỨA TRONG”</a></li>
+<li class="chapter" data-level="12.2.8" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:8:"><i class="fa fa-check"></i><b>12.2.8</b> NGUYÊN TẮC PHẢN TRỌNG LƯỢNG</a></li>
+<li class="chapter" data-level="12.2.9" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:9:"><i class="fa fa-check"></i><b>12.2.9</b> NGUYÊN TẮC GÂY ỨNG SUẤT (PHẢN TÁC ĐỘNG) SƠ BỘ</a></li>
+<li class="chapter" data-level="12.2.10" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:10:"><i class="fa fa-check"></i><b>12.2.10</b> NGUYÊN TẮC THỰC HIỆN SƠ BỘ</a></li>
+<li class="chapter" data-level="12.2.11" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:11:"><i class="fa fa-check"></i><b>12.2.11</b> NGUYÊN TẮC DỰ PHÒNG</a></li>
+<li class="chapter" data-level="12.2.12" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:12:"><i class="fa fa-check"></i><b>12.2.12</b> NGUYÊN TẮC ĐẲNG THẾ</a></li>
+<li class="chapter" data-level="12.2.13" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:13:"><i class="fa fa-check"></i><b>12.2.13</b> NGUYÊN TẮC ĐẢO NGƯỢC</a></li>
+<li class="chapter" data-level="12.2.14" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:14:"><i class="fa fa-check"></i><b>12.2.14</b> NGUYÊN TẮC CẦU (TRÒN) HÓA</a></li>
+<li class="chapter" data-level="12.2.15" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:15:"><i class="fa fa-check"></i><b>12.2.15</b> NGUYÊN TẮC LINH ĐỘNG</a></li>
+<li class="chapter" data-level="12.2.16" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:16:"><i class="fa fa-check"></i><b>12.2.16</b> NGUYÊN TẮC GIẢI (TÁC ĐỘNG) “THIẾU” HOẶC “THỪA”</a></li>
+<li class="chapter" data-level="12.2.17" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:17:"><i class="fa fa-check"></i><b>12.2.17</b> NGUYÊN TẮC CHUYỂN SANG CHIỀU KHÁC</a></li>
+<li class="chapter" data-level="12.2.18" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:18:"><i class="fa fa-check"></i><b>12.2.18</b> SỬ DỤNG CÁC DAO ĐỘNG CƠ HỌC</a></li>
+<li class="chapter" data-level="12.2.19" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:19:"><i class="fa fa-check"></i><b>12.2.19</b> NGUYÊN TẮC TÁC ĐỘNG THEO CHU KỲ</a></li>
+<li class="chapter" data-level="12.2.20" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:20:"><i class="fa fa-check"></i><b>12.2.20</b> NGUYÊN TẮC LIÊN TỤC CÁC TÁC ĐỘNG CÓ ÍCH</a></li>
+<li class="chapter" data-level="12.2.21" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:21:"><i class="fa fa-check"></i><b>12.2.21</b> NGUYÊN TẮC “VƯỢT NHANH”</a></li>
+<li class="chapter" data-level="12.2.22" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:22:"><i class="fa fa-check"></i><b>12.2.22</b> NGUYÊN TẮC BIẾN HẠI THÀNH LỢI</a></li>
+<li class="chapter" data-level="12.2.23" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:23:"><i class="fa fa-check"></i><b>12.2.23</b> NGUYÊN TẮC QUAN HỆ PHẢN HỒI</a></li>
+<li class="chapter" data-level="12.2.24" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:24:"><i class="fa fa-check"></i><b>12.2.24</b> NGUYÊN TẮC SỬ DỤNG TRUNG GIAN</a></li>
+<li class="chapter" data-level="12.2.25" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:25:"><i class="fa fa-check"></i><b>12.2.25</b> NGUYÊN TẮC TỰ PHỤC VỤ</a></li>
+<li class="chapter" data-level="12.2.26" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:26:"><i class="fa fa-check"></i><b>12.2.26</b> NGUYÊN TẮC SAO CHÉP (COPY)</a></li>
+<li class="chapter" data-level="12.2.27" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:27:"><i class="fa fa-check"></i><b>12.2.27</b> NGUYÊN TẮC “RẺ” THAY CHO “ĐẮT”</a></li>
+<li class="chapter" data-level="12.2.28" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:28:"><i class="fa fa-check"></i><b>12.2.28</b> THAY THẾ SƠ ĐỒ (KẾT CẤU) CƠ HỌC</a></li>
+<li class="chapter" data-level="12.2.29" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:29:"><i class="fa fa-check"></i><b>12.2.29</b> SỬ DỤNG CÁC KẾT CẤU KHÍ VÀ LỎNG</a></li>
+<li class="chapter" data-level="12.2.30" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:30:"><i class="fa fa-check"></i><b>12.2.30</b> SỬ DỤNG VỎ DẺO VÀ MÀNG MỎNG</a></li>
+<li class="chapter" data-level="12.2.31" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:31:"><i class="fa fa-check"></i><b>12.2.31</b> SỬ DỤNG CÁC VẬT LIỆU NHIỀU LỖ</a></li>
+<li class="chapter" data-level="12.2.32" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:32:"><i class="fa fa-check"></i><b>12.2.32</b> NGUYÊN TẮC THAY ĐỔI MÀU SẮC</a></li>
+<li class="chapter" data-level="12.2.33" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:33:"><i class="fa fa-check"></i><b>12.2.33</b> NGUYÊN TẮC ĐỒNG NHẤT</a></li>
+<li class="chapter" data-level="12.2.34" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:34:"><i class="fa fa-check"></i><b>12.2.34</b> <strong>NGUYÊN TẮC PHÂN HỦY HOẶC TÁI SINH CÁC PHẦN</strong></a></li>
+<li class="chapter" data-level="12.2.35" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:35:"><i class="fa fa-check"></i><b>12.2.35</b> THAY ĐỔI CÁC THÔNG SỐ HÓA LÝ CỦA ĐỐI TƯỢNG</a></li>
+<li class="chapter" data-level="12.2.36" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:36:"><i class="fa fa-check"></i><b>12.2.36</b> SỬ DỤNG CHUYỂN PHA</a></li>
+<li class="chapter" data-level="12.2.37" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:37:"><i class="fa fa-check"></i><b>12.2.37</b> SỬ DỤNG SỰ NỞ NHIỆT</a></li>
+<li class="chapter" data-level="12.2.38" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:38:"><i class="fa fa-check"></i><b>12.2.38</b> SỬ DỤNG CÁC CHẤT ÔXY HÓA MẠNH</a></li>
+<li class="chapter" data-level="12.2.39" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:39:"><i class="fa fa-check"></i><b>12.2.39</b> THAY ĐỔI ĐỘ TRƠ</a></li>
+<li class="chapter" data-level="12.2.40" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:2:40:"><i class="fa fa-check"></i><b>12.2.40</b> SỬ DỤNG CÁC VẬT LIỆU HỢP THÀNH (COMPOSITE)</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#sec:11:3:"><i class="fa fa-check"></i><b>12.3</b> Các ích lợi của các thủ thuật (nguyên tắc) sáng tạo cơ bản nhìn dưới góc độ các kiến thức cơ sở của Phương pháp luận sáng tạo và đổi mới (PPLSTVĐM)</a>
+<ul>
+<li class="chapter" data-level="12.3.1" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:1:"><i class="fa fa-check"></i><b>12.3.1</b> NGUYÊN TẮC PHÂN NHỎ</a></li>
+<li class="chapter" data-level="12.3.2" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:2:"><i class="fa fa-check"></i><b>12.3.2</b> NGUYÊN TẮC “TÁCH KHỎI”</a></li>
+<li class="chapter" data-level="12.3.3" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:3:"><i class="fa fa-check"></i><b>12.3.3</b> NGUYÊN TẮC PHẨM CHẤT CỤC BỘ</a></li>
+<li class="chapter" data-level="12.3.4" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:4:"><i class="fa fa-check"></i><b>12.3.4</b> NGUYÊN TẮC PHẢN (BẤT) ĐỐI XỨNG</a></li>
+<li class="chapter" data-level="12.3.5" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:5:"><i class="fa fa-check"></i><b>12.3.5</b> NGUYÊN TẮC KẾT HỢP</a></li>
+<li class="chapter" data-level="12.3.6" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:6:"><i class="fa fa-check"></i><b>12.3.6</b> NGUYÊN TẮC VẠN NĂNG</a></li>
+<li class="chapter" data-level="12.3.7" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#refsec113-7.-nguyên-tắc-chứa-trong"><i class="fa fa-check"></i><b>12.3.7</b> @ref(sec:11:3:) 7. NGUYÊN TẮC “CHỨA TRONG”</a></li>
+<li class="chapter" data-level="12.3.8" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:8:"><i class="fa fa-check"></i><b>12.3.8</b> NGUYÊN TẮC PHẢN TRỌNG LƯỢNG</a></li>
+<li class="chapter" data-level="12.3.9" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:9:"><i class="fa fa-check"></i><b>12.3.9</b> NGUYÊN TẮC GÂY ỨNG SUẤT (PHẢN TÁC ĐỘNG) SƠ BỘ</a></li>
+<li class="chapter" data-level="12.3.10" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:10:"><i class="fa fa-check"></i><b>12.3.10</b> NGUYÊN TẮC THỰC HIỆN SƠ BỘ</a></li>
+<li class="chapter" data-level="12.3.11" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:11:"><i class="fa fa-check"></i><b>12.3.11</b> NGUYÊN TẮC DỰ PHÒNG</a></li>
+<li class="chapter" data-level="12.3.12" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:12:"><i class="fa fa-check"></i><b>12.3.12</b> NGUYÊN TẮC ĐẲNG THẾ</a></li>
+<li class="chapter" data-level="12.3.13" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:13:"><i class="fa fa-check"></i><b>12.3.13</b> NGUYÊN TẮC ĐẢO NGƯỢC</a></li>
+<li class="chapter" data-level="12.3.14" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:14:"><i class="fa fa-check"></i><b>12.3.14</b> NGUYÊN TẮC CẦU (TRÒN) HÓA</a></li>
+<li class="chapter" data-level="12.3.15" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:15:"><i class="fa fa-check"></i><b>12.3.15</b> NGUYÊN TẮC LINH ĐỘNG</a></li>
+<li class="chapter" data-level="12.3.16" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:16:"><i class="fa fa-check"></i><b>12.3.16</b> NGUYÊN TẮC GIẢI (TÁC ĐỘNG) “THIẾU” HOẶC “THỪA”</a></li>
+<li class="chapter" data-level="12.3.17" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:17:"><i class="fa fa-check"></i><b>12.3.17</b> NGUYÊN TẮC CHUYỂN SANG CHIỀU KHÁC</a></li>
+<li class="chapter" data-level="12.3.18" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:18:"><i class="fa fa-check"></i><b>12.3.18</b> SỬ DỤNG CÁC DAO ĐỘNG CƠ HỌC</a></li>
+<li class="chapter" data-level="12.3.19" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:19:"><i class="fa fa-check"></i><b>12.3.19</b> NGUYÊN TẮC TÁC ĐỘNG THEO CHU KỲ</a></li>
+<li class="chapter" data-level="12.3.20" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:20:"><i class="fa fa-check"></i><b>12.3.20</b> NGUYÊN TẮC LIÊN TỤC CÁC TÁC ĐỘNG CÓ ÍCH</a></li>
+<li class="chapter" data-level="12.3.21" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:21:"><i class="fa fa-check"></i><b>12.3.21</b> NGUYÊN TẮC “VƯỢT NHANH”</a></li>
+<li class="chapter" data-level="12.3.22" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:22:"><i class="fa fa-check"></i><b>12.3.22</b> NGUYÊN TẮC BIẾN HẠI THÀNH LỢI</a></li>
+<li class="chapter" data-level="12.3.23" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:23:"><i class="fa fa-check"></i><b>12.3.23</b> NGUYÊN TẮC QUAN HỆ PHẢN HỒI</a></li>
+<li class="chapter" data-level="12.3.24" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:24:"><i class="fa fa-check"></i><b>12.3.24</b> NGUYÊN TẮC SỬ DỤNG TRUNG GIAN</a></li>
+<li class="chapter" data-level="12.3.25" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:25:"><i class="fa fa-check"></i><b>12.3.25</b> NGUYÊN TẮC TỰ PHỤC VỤ</a></li>
+<li class="chapter" data-level="12.3.26" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:26:"><i class="fa fa-check"></i><b>12.3.26</b> NGUYÊN TẮC SAO CHÉP (COPY)</a></li>
+<li class="chapter" data-level="12.3.27" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:27:"><i class="fa fa-check"></i><b>12.3.27</b> NGUYÊN TẮC “RẺ” THAY CHO “ĐẮT”</a></li>
+<li class="chapter" data-level="12.3.28" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:28:"><i class="fa fa-check"></i><b>12.3.28</b> THAY THẾ SƠ ĐỒ (KẾT CẤU) CƠ HỌC</a></li>
+<li class="chapter" data-level="12.3.29" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:29:"><i class="fa fa-check"></i><b>12.3.29</b> SỬ DỤNG CÁC KẾT CẤU KHÍ VÀ LỎNG</a></li>
+<li class="chapter" data-level="12.3.30" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:30:"><i class="fa fa-check"></i><b>12.3.30</b> SỬ DỤNG VỎ DẺO VÀ MÀNG MỎNG</a></li>
+<li class="chapter" data-level="12.3.31" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:31:"><i class="fa fa-check"></i><b>12.3.31</b> SỬ DỤNG CÁC VẬT LIỆU NHIỀU LỖ</a></li>
+<li class="chapter" data-level="12.3.32" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:32:"><i class="fa fa-check"></i><b>12.3.32</b> NGUYÊN TẮC THAY ĐỔI MÀU SẮC</a></li>
+<li class="chapter" data-level="12.3.33" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:33:"><i class="fa fa-check"></i><b>12.3.33</b> NGUYÊN TẮC ĐỒNG NHẤT</a></li>
+<li class="chapter" data-level="12.3.34" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:34:"><i class="fa fa-check"></i><b>12.3.34</b> NGUYÊN TẮC PHÂN HỦY HOẶC TÁI SINH CÁC PHẦN</a></li>
+<li class="chapter" data-level="12.3.35" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:35:"><i class="fa fa-check"></i><b>12.3.35</b> THAY ĐỔI CÁC THÔNG SỐ HÓA LÝ CỦA ĐỐI TƯỢNG</a></li>
+<li class="chapter" data-level="12.3.36" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:36:"><i class="fa fa-check"></i><b>12.3.36</b> SỬ DỤNG CHUYỂN PHA</a></li>
+<li class="chapter" data-level="12.3.37" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:37:"><i class="fa fa-check"></i><b>12.3.37</b> SỬ DỤNG SỰ NỞ NHIỆT</a></li>
+<li class="chapter" data-level="12.3.38" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:38:"><i class="fa fa-check"></i><b>12.3.38</b> SỬ DỤNG CÁC CHẤT ÔXY HÓA MẠNH</a></li>
+<li class="chapter" data-level="12.3.39" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:39:"><i class="fa fa-check"></i><b>12.3.39</b> THAY ĐỔI ĐỘ TRƠ</a></li>
+<li class="chapter" data-level="12.3.40" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:3:40:"><i class="fa fa-check"></i><b>12.3.40</b> SỬ DỤNG CÁC VẬT LIỆU HỢP THÀNH (COMPOSITE)</a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#sec:11:4:"><i class="fa fa-check"></i><b>12.4</b> Tổng kết chương</a>
+<ul>
+<li class="chapter" data-level="12.4.1" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:4:1:"><i class="fa fa-check"></i><b>12.4.1</b> TÓM TẮT MỘT SỐ Ý CHÍNH ĐÃ TRÌNH BÀY</a></li>
+<li class="chapter" data-level="12.4.2" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:4:2:"><i class="fa fa-check"></i><b>12.4.2</b> CÁC THỦ THUẬT (NGUYÊN TẮC SÁNG TẠO CƠ BẢN NHƯ LÀ HỆ THỐNG)</a></li>
+<li class="chapter" data-level="12.4.3" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:4:3:"><i class="fa fa-check"></i><b>12.4.3</b> PHÂN LOẠI CÁC THỦ THUẬT (NGUYÊN TẮC) SÁNG TẠO CƠ BẢN</a></li>
+<li class="chapter" data-level="12.4.4" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:11:4:4:"><i class="fa fa-check"></i><b>12.4.4</b> VÀI NÉT VỀ QUYỂN NĂM “CÁC THỦ THUẬT (NGUYÊN TẮC) SÁNG TAO CƠ BẢN: PHẦN 2”</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#những-patent-đầu-tiên-trên-thế-giới"><i class="fa fa-check"></i>NHỮNG PATENT ĐẦU TIÊN TRÊN THẾ GIỚI</a></li>
+<li class="chapter" data-level="" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#nước-mỹ-tìm-kiếm-ý-tưởng"><i class="fa fa-check"></i>NƯỚC MỸ TÌM KIẾM Ý TƯỞNG</a></li>
+<li class="chapter" data-level="" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#các-nhóm-chất-lượng-nhật-bản"><i class="fa fa-check"></i>CÁC NHÓM CHẤT LƯỢNG NHẬT BẢN</a></li>
+<li class="chapter" data-level="" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#tiêu-chuẩn-mỗi-ngày-một-ý-tưởng"><i class="fa fa-check"></i>TIÊU CHUẨN: MỖI NGÀY MỘT Ý TƯỞNG</a></li>
+<li class="chapter" data-level="" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#hãng-ôtô-nhật-toyota"><i class="fa fa-check"></i>HÃNG ÔTÔ NHẬT TOYOTA</a></li>
+<li class="chapter" data-level="" data-path="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="nội-dung-ý-nghĩa-và-các-ích-lợi-của-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#các-cuộc-thi-sáng-tạo-ở-nhật-bản"><i class="fa fa-check"></i>CÁC CUỘC THI SÁNG TẠO Ở NHẬT BẢN</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><i class="fa fa-check"></i><b>13</b> ÁP DỤNG CÁC THỦ THUẬT (NGUYÊN TẮC) SÁNG TẠO CƠ BẢN</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#sec:12:1:"><i class="fa fa-check"></i><b>13.1</b> LÝ GIẢI MỘT CÁCH LÔGÍCH CÁC GIẢI PHÁP SÁNG TẠO ĐÃ CÓ</a>
+<ul>
+<li class="chapter" data-level="13.1.1" data-path="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:12:1:1:"><i class="fa fa-check"></i><b>13.1.1</b> Mở đầu</a></li>
+<li class="chapter" data-level="13.1.2" data-path="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:12:1:2:"><i class="fa fa-check"></i><b>13.1.2</b> Lôgích nhu cầu–hệ thống</a></li>
+<li class="chapter" data-level="13.1.3" data-path="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:12:1:3:"><i class="fa fa-check"></i><b>13.1.3</b> Diễn giải lôgích nhu cầu–hệ thống bằng các thủ thuật (nguyên tắc) sáng tạo cơ bản</a></li>
+<li class="chapter" data-level="13.1.4" data-path="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:12:1:4:"><i class="fa fa-check"></i><b>13.1.4</b> Chương trình phát hiện các thủ thuật và làm tái hiện quá trình suy nghĩ lôgích để có được hệ thống cải tiến cho trước</a></li>
+<li class="chapter" data-level="13.1.5" data-path="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:12:1:5:"><i class="fa fa-check"></i><b>13.1.5</b> Một số thí dụ áp dụng “Chương trình lý giải lôgích”</a></li>
+</ul></li>
+<li class="chapter" data-level="13.2" data-path="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#sec:12:2:"><i class="fa fa-check"></i><b>13.2</b> GIẢI QUYẾT CÁC LOẠI MÂU THUẪN TRONG TƯ DUY SÁNG TẠO</a>
+<ul>
+<li class="chapter" data-level="13.2.1" data-path="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:12:2:1:"><i class="fa fa-check"></i><b>13.2.1</b> Mở đầu</a></li>
+<li class="chapter" data-level="13.2.2" data-path="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:12:2:2:"><i class="fa fa-check"></i><b>13.2.2</b> Bảng các thủ thuật (nguyên tắc) sáng tạo cơ bản dùng để giải quyết các mâu thuẫn kỹ thuật</a></li>
+<li class="chapter" data-level="13.2.3" data-path="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:12:2:3:"><i class="fa fa-check"></i><b>13.2.3</b> Các biến đổi mẫu (các nguyên tắc phân chia các mặt đối lập) dùng để giải quyết các mâu thuẫn vật lý</a></li>
+<li class="chapter" data-level="13.2.4" data-path="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:12:2:4:"><i class="fa fa-check"></i><b>13.2.4</b> Một số nhận xét về các công cụ của TRIZ dùng để giải quyết các loại mâu thuẫn</a></li>
+<li class="chapter" data-level="13.2.5" data-path="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:12:2:5:"><i class="fa fa-check"></i><b>13.2.5</b> Từ điển các công cụ dùng để giải quyết các mâu thuẫn vật lý</a></li>
+</ul></li>
+<li class="chapter" data-level="13.3" data-path="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#sec:12:3:"><i class="fa fa-check"></i><b>13.3</b> CHƯƠNG TRÌNH RÚT GỌN DÙNG ĐỂ GIẢI QUYẾT VẤN ĐỀ VÀ RA QUYẾT ĐỊNH</a>
+<ul>
+<li class="chapter" data-level="13.3.1" data-path="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:12:3:1:"><i class="fa fa-check"></i><b>13.3.1</b> Mở đầu</a></li>
+<li class="chapter" data-level="13.3.2" data-path="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:12:3:2:"><i class="fa fa-check"></i><b>13.3.2</b> Chương trình rút gọn dùng để giải quyết vấn đề và ra quyết định</a></li>
+<li class="chapter" data-level="13.3.3" data-path="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#subsec:12:3:3:"><i class="fa fa-check"></i><b>13.3.3</b> Các thí dụ sử dụng “Chương trình rút gọn”</a></li>
+</ul></li>
+<li class="chapter" data-level="13.4" data-path="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#sec:12:4:"><i class="fa fa-check"></i><b>13.4</b> TỔNG KẾT HỆ THỐNG CÁC THỦ THUẬT (NGUYÊN TẮC) SÁNG TẠO CƠ BẢN</a></li>
+<li class="chapter" data-level="" data-path="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#phụ-lục-1-các-thí-dụ"><i class="fa fa-check"></i>PHỤ LỤC 1: CÁC THÍ DỤ</a></li>
+<li class="chapter" data-level="" data-path="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#phụ-lục-2-các-chuyện-vui"><i class="fa fa-check"></i>PHỤ LỤC 2: CÁC CHUYỆN VUI</a></li>
+<li class="chapter" data-level="" data-path="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html"><a href="áp-dụng-các-thủ-thuật-nguyên-tắc-sáng-tạo-cơ-bản.html#phụ-lục-3-các-tranh-vui"><i class="fa fa-check"></i>PHỤ LỤC 3: CÁC TRANH VUI</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="các-phương-pháp-sáng-tạo-của-triz-và-các-phương-pháp-sáng-tạo-không-phải-của-triz.html"><a href="các-phương-pháp-sáng-tạo-của-triz-và-các-phương-pháp-sáng-tạo-không-phải-của-triz.html"><i class="fa fa-check"></i><b>14</b> CÁC PHƯƠNG PHÁP SÁNG TẠO CỦA TRIZ VÀ CÁC PHƯƠNG PHÁP SÁNG TẠO KHÔNG PHẢI CỦA TRIZ</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="các-phương-pháp-sáng-tạo-của-triz-và-các-phương-pháp-sáng-tạo-không-phải-của-triz.html"><a href="các-phương-pháp-sáng-tạo-của-triz-và-các-phương-pháp-sáng-tạo-không-phải-của-triz.html#sec:13:1:"><i class="fa fa-check"></i><b>14.1</b> MỞ ĐẦU</a></li>
+<li class="chapter" data-level="14.2" data-path="các-phương-pháp-sáng-tạo-của-triz-và-các-phương-pháp-sáng-tạo-không-phải-của-triz.html"><a href="các-phương-pháp-sáng-tạo-của-triz-và-các-phương-pháp-sáng-tạo-không-phải-của-triz.html#sec:13:2:"><i class="fa fa-check"></i><b>14.2</b> TỔNG QUAN CÁC PHƯƠNG PHÁP SÁNG TẠO CỦA TRIZ</a>
+<ul>
+<li class="chapter" data-level="14.2.1" data-path="các-phương-pháp-sáng-tạo-của-triz-và-các-phương-pháp-sáng-tạo-không-phải-của-triz.html"><a href="các-phương-pháp-sáng-tạo-của-triz-và-các-phương-pháp-sáng-tạo-không-phải-của-triz.html#subsec:13:2:1:"><i class="fa fa-check"></i><b>14.2.1</b> Một số nhận xét chung về các phương pháp sáng tạo của TRIZ</a></li>
+<li class="chapter" data-level="14.2.2" data-path="các-phương-pháp-sáng-tạo-của-triz-và-các-phương-pháp-sáng-tạo-không-phải-của-triz.html"><a href="các-phương-pháp-sáng-tạo-của-triz-và-các-phương-pháp-sáng-tạo-không-phải-của-triz.html#subsec:13:2:2:"><i class="fa fa-check"></i><b>14.2.2</b> Các phương pháp sáng tạo của TRIZ dựa trên các thủ thuật</a></li>
+<li class="chapter" data-level="14.2.3" data-path="các-phương-pháp-sáng-tạo-của-triz-và-các-phương-pháp-sáng-tạo-không-phải-của-triz.html"><a href="các-phương-pháp-sáng-tạo-của-triz-và-các-phương-pháp-sáng-tạo-không-phải-của-triz.html#subsec:13:2:3:"><i class="fa fa-check"></i><b>14.2.3</b> Các phương pháp sáng tạo của TRIZ dựa trên các cơ sở khác</a></li>
+<li class="chapter" data-level="14.2.4" data-path="các-phương-pháp-sáng-tạo-của-triz-và-các-phương-pháp-sáng-tạo-không-phải-của-triz.html"><a href="các-phương-pháp-sáng-tạo-của-triz-và-các-phương-pháp-sáng-tạo-không-phải-của-triz.html#subsec:13:2:4:"><i class="fa fa-check"></i><b>14.2.4</b> Algôrit giải các bài toán sáng chế (ARIZ)</a></li>
+</ul></li>
+<li class="chapter" data-level="14.3" data-path="các-phương-pháp-sáng-tạo-của-triz-và-các-phương-pháp-sáng-tạo-không-phải-của-triz.html"><a href="các-phương-pháp-sáng-tạo-của-triz-và-các-phương-pháp-sáng-tạo-không-phải-của-triz.html#sec:13:3:"><i class="fa fa-check"></i><b>14.3</b> CÁC PHƯƠNG PHÁP SÁNG TẠO KHÔNG PHẢI CỦA TRIZ</a>
+<ul>
+<li class="chapter" data-level="14.3.1" data-path="các-phương-pháp-sáng-tạo-của-triz-và-các-phương-pháp-sáng-tạo-không-phải-của-triz.html"><a href="các-phương-pháp-sáng-tạo-của-triz-và-các-phương-pháp-sáng-tạo-không-phải-của-triz.html#subsec:13:3:1:"><i class="fa fa-check"></i><b>14.3.1</b> Một số nhận xét chung về các phương pháp sáng tạo không phải của TRIZ</a></li>
+<li class="chapter" data-level="14.3.2" data-path="các-phương-pháp-sáng-tạo-của-triz-và-các-phương-pháp-sáng-tạo-không-phải-của-triz.html"><a href="các-phương-pháp-sáng-tạo-của-triz-và-các-phương-pháp-sáng-tạo-không-phải-của-triz.html#subsec:13:3:2:"><i class="fa fa-check"></i><b>14.3.2</b> Các phương pháp sáng tạo không phải của TRIZ dựa trên các kinh nghiệm</a></li>
+<li class="chapter" data-level="14.3.3" data-path="các-phương-pháp-sáng-tạo-của-triz-và-các-phương-pháp-sáng-tạo-không-phải-của-triz.html"><a href="các-phương-pháp-sáng-tạo-của-triz-và-các-phương-pháp-sáng-tạo-không-phải-của-triz.html#subsec:13:3:3:"><i class="fa fa-check"></i><b>14.3.3</b> Các phương pháp sáng tạo không phải của TRIZ dựa trên cơ sở khoa học và kinh nghiệm</a></li>
+<li class="chapter" data-level="14.3.4" data-path="các-phương-pháp-sáng-tạo-của-triz-và-các-phương-pháp-sáng-tạo-không-phải-của-triz.html"><a href="các-phương-pháp-sáng-tạo-của-triz-và-các-phương-pháp-sáng-tạo-không-phải-của-triz.html#subsec:13:3:4:"><i class="fa fa-check"></i><b>14.3.4</b> Các phương pháp sáng tạo không phải của TRIZ là các phương pháp bao quát cả quá trình giải bài toán</a></li>
+<li class="chapter" data-level="14.3.5" data-path="các-phương-pháp-sáng-tạo-của-triz-và-các-phương-pháp-sáng-tạo-không-phải-của-triz.html"><a href="các-phương-pháp-sáng-tạo-của-triz-và-các-phương-pháp-sáng-tạo-không-phải-của-triz.html#subsec:13:3:5:"><i class="fa fa-check"></i><b>14.3.5</b> Các phương pháp sáng tạo không phải của TRIZ là các phương pháp được máy tính trợ giúp (Computer Assisted Creativity Methods)</a></li>
+</ul></li>
+<li class="chapter" data-level="14.4" data-path="các-phương-pháp-sáng-tạo-của-triz-và-các-phương-pháp-sáng-tạo-không-phải-của-triz.html"><a href="các-phương-pháp-sáng-tạo-của-triz-và-các-phương-pháp-sáng-tạo-không-phải-của-triz.html#sec:13:4:"><i class="fa fa-check"></i><b>14.4</b> TỔNG KẾT CHƯƠNG 13</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html"><a href="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html"><i class="fa fa-check"></i><b>15</b> CÁC QUY LUẬT PHÁT TRIỂN HỆ THỐNG (CÁC QUY LUẬT SÁNG TẠO VÀ ĐỔI MỚI)</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html"><a href="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html#sec:14:1:"><i class="fa fa-check"></i><b>15.1</b> QUY LUẬT VÀ MỘT SỐ ĐIỂM CẦN CHÚ Ý VỀ QUY LUẬT</a></li>
+<li class="chapter" data-level="15.2" data-path="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html"><a href="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html#sec:14:2:"><i class="fa fa-check"></i><b>15.2</b> CÁC QUY LUẬT PHÁT TRIỂN HỆ THỐNG (CÁC QUY LUẬT SÁNG TẠO VÀ ĐỔI MỚI) (1)</a>
+<ul>
+<li class="chapter" data-level="15.2.1" data-path="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html"><a href="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html#subsec:14:2:1:"><i class="fa fa-check"></i><b>15.2.1</b> Quy luật về tính tự lập của hệ thống (quy luật về tính đầy đủ các thành phần của hệ thống)</a></li>
+<li class="chapter" data-level="15.2.2" data-path="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html"><a href="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html#một-số-thí-dụ-minh-họa-quy-luật"><i class="fa fa-check"></i><b>15.2.2</b> MỘT SỐ THÍ DỤ MINH HỌA QUY LUẬT:</a></li>
+<li class="chapter" data-level="15.2.3" data-path="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html"><a href="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html#subsec:14:2:2:"><i class="fa fa-check"></i><b>15.2.3</b> Quy luật về tính thông suốt của hệ thống</a></li>
+<li class="chapter" data-level="15.2.4" data-path="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html"><a href="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html#subsec:14:2:3:"><i class="fa fa-check"></i><b>15.2.4</b> Quy luật về tính tương hợp của hệ thống</a></li>
+<li class="chapter" data-level="15.2.5" data-path="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html"><a href="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html#subsec:14:2:4:"><i class="fa fa-check"></i><b>15.2.5</b> Quy luật về tính lý tưởng của hệ thống</a></li>
+<li class="chapter" data-level="15.2.6" data-path="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html"><a href="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html#subsec:14:2:5:"><i class="fa fa-check"></i><b>15.2.6</b> Quy luật về tính không đồng đều của hệ thống</a></li>
+<li class="chapter" data-level="15.2.7" data-path="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html"><a href="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html#subsec:14:2:6:"><i class="fa fa-check"></i><b>15.2.7</b> Quy luật về chuyển sự phát triển lên hệ trên</a></li>
+<li class="chapter" data-level="15.2.8" data-path="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html"><a href="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html#subsec:14:2:7:"><i class="fa fa-check"></i><b>15.2.8</b> Quy luật về chuyển sự phát triển từ mức vĩ mô xuống mức vi mô</a></li>
+<li class="chapter" data-level="15.2.9" data-path="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html"><a href="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html#subsec:14:2:8:"><i class="fa fa-check"></i><b>15.2.9</b> Quy luật về tính điều khiển của hệ thống</a></li>
+<li class="chapter" data-level="15.2.10" data-path="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html"><a href="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html#subsec:14:2:9:"><i class="fa fa-check"></i><b>15.2.10</b> Quy luật về sự phát triển theo đường cong hình chữ S</a></li>
+<li class="chapter" data-level="15.2.11" data-path="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html"><a href="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html#subsec:14:2:10:"><i class="fa fa-check"></i><b>15.2.11</b> Một số thí dụ về việc không tuân thủ các quy luật phát triển hệ thống</a></li>
+</ul></li>
+<li class="chapter" data-level="15.3" data-path="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html"><a href="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html#sec:14:3:"><i class="fa fa-check"></i><b>15.3</b> HỆ THỐNG CÁC QUY LUẬT PHÁT TRIỂN HỆ THỐNG</a>
+<ul>
+<li class="chapter" data-level="15.3.1" data-path="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html"><a href="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html#subsec:14:3:1:"><i class="fa fa-check"></i><b>15.3.1</b> Một số điểm lưu ý về các quy luật phát triển hệ thống</a></li>
+<li class="chapter" data-level="15.3.2" data-path="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html"><a href="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html#subsec:14:3:2:"><i class="fa fa-check"></i><b>15.3.2</b> Các mối liên kết giữa các quy luật phát triển hệ thống</a></li>
+<li class="chapter" data-level="15.3.3" data-path="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html"><a href="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html#subsec:14:3:3:"><i class="fa fa-check"></i><b>15.3.3</b> Các quy luật phát triển hệ thống và các kiến thức khác trình bày trong bộ sách “Sáng tạo và đổi mới”</a></li>
+</ul></li>
+<li class="chapter" data-level="15.4" data-path="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html"><a href="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html#sec:14:4:"><i class="fa fa-check"></i><b>15.4</b> CÁC MỐI LIÊN KẾT GIỮA CÁC QUY LUẬT PHÁT TRIỂN HỆ THỐNG VÀ CÁC PHƯƠNG PHÁP, THỦ THUẬT (NGUYÊN TẮC) SÁNG TẠO CƠ BẢN</a>
+<ul>
+<li class="chapter" data-level="15.4.1" data-path="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html"><a href="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html#subsec:14:4:1:"><i class="fa fa-check"></i><b>15.4.1</b> Các mối liên kết giữa các quy luật phát triển hệ thống và các phương pháp sáng tạo không phải của TRIZ</a></li>
+<li class="chapter" data-level="15.4.2" data-path="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html"><a href="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html#subsec:14:4:2:"><i class="fa fa-check"></i><b>15.4.2</b> Các mối liên kết giữa các quy luật phát triển hệ thống và các thủ thuật (nguyên tắc) sáng tạo của TRIZ</a></li>
+<li class="chapter" data-level="15.4.3" data-path="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html"><a href="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html#subsec:14:4:3:"><i class="fa fa-check"></i><b>15.4.3</b> “Chương trình phát hiện các quy luật phát triển hệ thống” và một số thí dụ minh họa</a></li>
+</ul></li>
+<li class="chapter" data-level="15.5" data-path="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html"><a href="các-quy-luật-phát-triển-hệ-thống-các-quy-luật-sáng-tạo-và-đổi-mới.html#sec:14:5:"><i class="fa fa-check"></i><b>15.5</b> THAY CHO TỔNG KẾT: CÁC ÍCH LỢI (CÔNG DỤNG) CỦA HỆ THỐNG CÁC QUY LUẬT PHÁT TRIỂN HỆ THỐNG</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html"><a href="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html"><i class="fa fa-check"></i><b>16</b> HỆ THỐNG CÁC CHUẨN DÙNG ĐỂ GIẢI CÁC BÀI TOÁN SÁNG CHẾ</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html"><a href="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html#sec:15:1:"><i class="fa fa-check"></i><b>16.1</b> VÀI NÉT VỀ VIỆC SỬ DỤNG KÝ HIỆU TRONG KHOA HỌC</a></li>
+<li class="chapter" data-level="16.2" data-path="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html"><a href="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html#sec:15:2:"><i class="fa fa-check"></i><b>16.2</b> PHÂN TÍCH CHẤT–TRƯỜNG (PHÂN TÍCH VEPOL) VÀ KHÁI NIỆM CHUẨN TRONG TRIZ</a>
+<ul>
+<li class="chapter" data-level="16.2.1" data-path="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html"><a href="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html#subsec:15:2:1:"><i class="fa fa-check"></i><b>16.2.1</b> Vepol và phân tích vepol</a></li>
+<li class="chapter" data-level="16.2.2" data-path="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html"><a href="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html#subsec:15:2:2:"><i class="fa fa-check"></i><b>16.2.2</b> Các bài toán có thể có nhìn theo quan điểm vepol</a></li>
+<li class="chapter" data-level="16.2.3" data-path="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html"><a href="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html#subsec:15:2:3:"><i class="fa fa-check"></i><b>16.2.3</b> Một số ký hiệu thông dụng dùng trong biểu diễn vepol</a></li>
+<li class="chapter" data-level="16.2.4" data-path="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html"><a href="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html#subsec:15:2:4:"><i class="fa fa-check"></i><b>16.2.4</b> Một số điểm lưu ý về vepol, biểu diễn vepol và phân tích vepol</a></li>
+<li class="chapter" data-level="16.2.5" data-path="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html"><a href="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html#subsec:15:2:5:"><i class="fa fa-check"></i><b>16.2.5</b> Khái niệm lời giải chuẩn (chuẩn)</a></li>
+</ul></li>
+<li class="chapter" data-level="16.3" data-path="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html"><a href="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html#sec:15:3:"><i class="fa fa-check"></i><b>16.3</b> HỆ THỐNG CÁC CHUẨN: LỜI PHÁT BIỂU, DIỄN GIẢI VÀ CÁC THÍ DỤ</a>
+<ul>
+<li class="chapter" data-level="16.3.1" data-path="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html"><a href="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html#subsec:15:3:1:"><i class="fa fa-check"></i><b>16.3.1</b> Loại 1: Dựng và phá các hệ vepol</a></li>
+<li class="chapter" data-level="16.3.2" data-path="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html"><a href="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html#subsec:15:3:2:"><i class="fa fa-check"></i><b>16.3.2</b> Loại 2: Sự phát triển của các hệ vepol</a></li>
+<li class="chapter" data-level="16.3.3" data-path="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html"><a href="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html#subsec:15:3:3:"><i class="fa fa-check"></i><b>16.3.3</b> Loại 3: Chuyển sang hệ trên và sang mức vi mô</a></li>
+<li class="chapter" data-level="16.3.4" data-path="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html"><a href="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html#subsec:15:3:4:"><i class="fa fa-check"></i><b>16.3.4</b> Loại 4: Các chuẩn dùng để phát hiện và đo hệ thống</a></li>
+<li class="chapter" data-level="16.3.5" data-path="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html"><a href="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html#subsec:15:3:5:"><i class="fa fa-check"></i><b>16.3.5</b> Loại 5: Các chuẩn dùng để sử dụng các chuẩn</a></li>
+</ul></li>
+<li class="chapter" data-level="16.4" data-path="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html"><a href="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html#sec:15:4:"><i class="fa fa-check"></i><b>16.4</b> MỘT SỐ ĐIỂM CẦN LƯU Ý VỀ HỆ THỐNG CÁC CHUẨN</a></li>
+<li class="chapter" data-level="16.5" data-path="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html"><a href="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html#sec:15:5:"><i class="fa fa-check"></i><b>16.5</b> CHƯƠNG TRÌNH SỬ DỤNG HỆ THỐNG CÁC CHUẨN ĐỂ GIẢI CÁC BÀI TOÁN SÁNG CHẾ VÀ CÁC THÍ DỤ ÁP DỤNG</a>
+<ul>
+<li class="chapter" data-level="16.5.1" data-path="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html"><a href="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html#subsec:15:5:1:"><i class="fa fa-check"></i><b>16.5.1</b> Chương trình sử dụng hệ thống các chuẩn để giải các bài toán sáng chế</a></li>
+<li class="chapter" data-level="16.5.2" data-path="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html"><a href="hệ-thống-các-chuẩn-dùng-để-giải-các-bài-toán-sáng-chế.html#subsec:15:5:2:"><i class="fa fa-check"></i><b>16.5.2</b> Các thí dụ áp dụng “Chương trình sử dụng hệ thống các chuẩn để giải các bài toán sáng chế”</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="algôrit-giải-các-bài-toán-sáng-chế-ariz.html"><a href="algôrit-giải-các-bài-toán-sáng-chế-ariz.html"><i class="fa fa-check"></i><b>17</b> ALGÔRIT GIẢI CÁC BÀI TOÁN SÁNG CHẾ (ARIZ)</a>
+<ul>
+<li class="chapter" data-level="17.1" data-path="algôrit-giải-các-bài-toán-sáng-chế-ariz.html"><a href="algôrit-giải-các-bài-toán-sáng-chế-ariz.html#sec:16:1:"><i class="fa fa-check"></i><b>17.1</b> ALGÔRIT VÀ ALGÔRIT GIẢI CÁC BÀI TOÁN SÁNG CHẾ (ARIZ) LÀ GÌ?</a></li>
+<li class="chapter" data-level="17.2" data-path="algôrit-giải-các-bài-toán-sáng-chế-ariz.html"><a href="algôrit-giải-các-bài-toán-sáng-chế-ariz.html#sec:16:2:"><i class="fa fa-check"></i><b>17.2</b> ARIZ-85C</a>
+<ul>
+<li class="chapter" data-level="17.2.1" data-path="algôrit-giải-các-bài-toán-sáng-chế-ariz.html"><a href="algôrit-giải-các-bài-toán-sáng-chế-ariz.html#subsec:16:2:1:"><i class="fa fa-check"></i><b>17.2.1</b> Sơ đồ khối ARIZ 85C</a></li>
+<li class="chapter" data-level="17.2.2" data-path="algôrit-giải-các-bài-toán-sáng-chế-ariz.html"><a href="algôrit-giải-các-bài-toán-sáng-chế-ariz.html#subsec:16:2:2:"><i class="fa fa-check"></i><b>17.2.2</b> Văn bản đầy đủ của ARIZ-85C</a></li>
+<li class="chapter" data-level="17.2.3" data-path="algôrit-giải-các-bài-toán-sáng-chế-ariz.html"><a href="algôrit-giải-các-bài-toán-sáng-chế-ariz.html#subsec:16:2:3:"><i class="fa fa-check"></i><b>17.2.3</b> ARIZ-85C: Văn bản các bước giải</a></li>
+</ul></li>
+<li class="chapter" data-level="17.3" data-path="algôrit-giải-các-bài-toán-sáng-chế-ariz.html"><a href="algôrit-giải-các-bài-toán-sáng-chế-ariz.html#sec:16:3:"><i class="fa fa-check"></i><b>17.3</b> ARIZ-85</a>
+<ul>
+<li class="chapter" data-level="17.3.1" data-path="algôrit-giải-các-bài-toán-sáng-chế-ariz.html"><a href="algôrit-giải-các-bài-toán-sáng-chế-ariz.html#subsec:16:3:1:"><i class="fa fa-check"></i><b>17.3.1</b> Sơ đồ khối ARIZ-85</a></li>
+<li class="chapter" data-level="17.3.2" data-path="algôrit-giải-các-bài-toán-sáng-chế-ariz.html"><a href="algôrit-giải-các-bài-toán-sáng-chế-ariz.html#subsec:16:3:2:"><i class="fa fa-check"></i><b>17.3.2</b> Văn bản các bước giải của ARIZ-85 và giải thích các bước</a></li>
+<li class="chapter" data-level="17.3.3" data-path="algôrit-giải-các-bài-toán-sáng-chế-ariz.html"><a href="algôrit-giải-các-bài-toán-sáng-chế-ariz.html#subsec:16:3:3:"><i class="fa fa-check"></i><b>17.3.3</b> Sử dụng ARIZ-85 giải các bài toán sáng chế</a></li>
+</ul></li>
+<li class="chapter" data-level="17.4" data-path="algôrit-giải-các-bài-toán-sáng-chế-ariz.html"><a href="algôrit-giải-các-bài-toán-sáng-chế-ariz.html#sec:16:4:"><i class="fa fa-check"></i><b>17.4</b> ARIZ-85 và ARIZ-85C: NHỮNG ĐIỀU CẦN LƯU Ý THÊM</a></li>
+<li class="chapter" data-level="17.5" data-path="algôrit-giải-các-bài-toán-sáng-chế-ariz.html"><a href="algôrit-giải-các-bài-toán-sáng-chế-ariz.html#sec:16:5:"><i class="fa fa-check"></i><b>17.5</b> VỀ VIỆC SỬ DỤNG CÁC HIỆU ỨNG VẬT LÝ NÓI RIÊNG, CÁC HIỆU ỨNG KHOA HỌC NÓI CHUNG TRONG CÁC SÁNG CHẾ</a>
+<ul>
+<li class="chapter" data-level="17.5.1" data-path="algôrit-giải-các-bài-toán-sáng-chế-ariz.html"><a href="algôrit-giải-các-bài-toán-sáng-chế-ariz.html#subsec:16:5:1:"><i class="fa fa-check"></i><b>17.5.1</b> Sử dụng các hiệu ứng vật lý</a></li>
+<li class="chapter" data-level="17.5.2" data-path="algôrit-giải-các-bài-toán-sáng-chế-ariz.html"><a href="algôrit-giải-các-bài-toán-sáng-chế-ariz.html#subsec:16:5:2:"><i class="fa fa-check"></i><b>17.5.2</b> Sử dụng các hiệu ứng hóa học</a></li>
+<li class="chapter" data-level="17.5.3" data-path="algôrit-giải-các-bài-toán-sáng-chế-ariz.html"><a href="algôrit-giải-các-bài-toán-sáng-chế-ariz.html#subsec:16:5:3:"><i class="fa fa-check"></i><b>17.5.3</b> Sử dụng các hiệu ứng sinh học</a></li>
+</ul></li>
+<li class="chapter" data-level="17.6" data-path="algôrit-giải-các-bài-toán-sáng-chế-ariz.html"><a href="algôrit-giải-các-bài-toán-sáng-chế-ariz.html#sec:16:6:"><i class="fa fa-check"></i><b>17.6</b> CÁC THÍ DỤ ÁP DỤNG ARIZ-85C GIẢI CÁC BÀI TOÁN SÁNG CHẾ</a></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html"><a href="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html"><i class="fa fa-check"></i><b>18</b> CHƯƠNG 17: PHƯƠNG PHÁP LUẬN SÁNG TẠO VÀ ĐỔI MỚI: NHỮNG ĐIỀU MUỐN NÓI THÊM</a>
+<ul>
+<li class="chapter" data-level="18.1" data-path="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html"><a href="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html#du-nhập-phổ-biến-và-phát-triển-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm-ở-việt-nam"><i class="fa fa-check"></i><b>18.1</b> DU NHẬP, PHỔ BIẾN VÀ PHÁT TRIỂN PHƯƠNG PHÁP LUẬN SÁNG TẠO VÀ ĐỔI MỚI (PPLSTVĐM) Ở VIỆT NAM</a>
+<ul>
+<li class="chapter" data-level="18.1.1" data-path="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html"><a href="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html#mở-đầu-1"><i class="fa fa-check"></i><b>18.1.1</b> Mở đầu</a></li>
+<li class="chapter" data-level="18.1.2" data-path="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html"><a href="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html#du-nhập-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm-vào-việt-nam"><i class="fa fa-check"></i><b>18.1.2</b> Du nhập phương pháp luận sáng tạo và đổi mới (PPLSTVĐM) vào Việt Nam</a></li>
+<li class="chapter" data-level="18.1.3" data-path="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html"><a href="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html#phổ-biến-và-phát-triển-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm-ở-việt-nam-các-kịch-bản"><i class="fa fa-check"></i><b>18.1.3</b> Phổ biến và phát triển phương pháp luận sáng tạo và đổi mới (PPLSTVĐM) ở Việt Nam: Các kịch bản</a></li>
+<li class="chapter" data-level="18.1.4" data-path="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html"><a href="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html#phổ-biến-và-phát-triển-pplstvđm-ở-việt-nam-trước-và-từ-khi-thành-lập-trung-tâm-sáng-tạo-khoa-học---kỹ-thuật-tsk"><i class="fa fa-check"></i><b>18.1.4</b> Phổ biến và phát triển PPLSTVĐM ở Việt Nam trước và từ khi thành lập Trung tâm Sáng tạo Khoa học - kỹ thuật (TSK)</a></li>
+</ul></li>
+<li class="chapter" data-level="18.2" data-path="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html"><a href="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html#một-số-bài-báo-bài-trả-lời-phỏng-vấn-về-khoa-học-sáng-tạo-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm-hoạt-động-của-trung-tâm-sáng-tạo-khoa-học---kỹ-thuật-tsk-đăng-trên-các-báo-chí-việt-nam"><i class="fa fa-check"></i><b>18.2</b> MỘT SỐ BÀI BÁO, BÀI TRẢ LỜI PHỎNG VẤN VỀ KHOA HỌC SÁNG TẠO, PHƯƠNG PHÁP LUẬN SÁNG TẠO VÀ ĐỔI MỚI (PPLSTVĐM), HOẠT ĐỘNG CỦA TRUNG TÂM SÁNG TẠO KHOA HỌC - KỸ THUẬT (TSK), ĐĂNG TRÊN CÁC BÁO CHÍ VIỆT NAM</a></li>
+<li class="chapter" data-level="18.3" data-path="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html"><a href="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html#một-số-bài-báo-báo-cáo-hội-nghị-của-người-viết-về-khoa-học-sáng-tạo-và-phương-pháp-luận-sáng-tạo-và-đổi-mới-pplstvđm-công-bố-ở-nước-ngoài"><i class="fa fa-check"></i><b>18.3</b> MỘT SỐ BÀI BÁO, BÁO CÁO HỘI NGHỊ CỦA NGƯỜI VIẾT VỀ KHOA HỌC SÁNG TẠO VÀ PHƯƠNG PHÁP LUẬN SÁNG TẠO VÀ ĐỔI MỚI (PPLSTVĐM) CÔNG BỐ Ở NƯỚC NGOÀI</a>
+<ul>
+<li class="chapter" data-level="18.3.1" data-path="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html"><a href="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html#introducing-creativity-methodologies-into-vietnam"><i class="fa fa-check"></i><b>18.3.1</b> Introducing Creativity Methodologies into Vietnam</a></li>
+<li class="chapter" data-level="18.3.2" data-path="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html"><a href="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html#triz-inventive-creativity-based-on-the-laws-of-systems-development"><i class="fa fa-check"></i><b>18.3.2</b> TRIZ: Inventive Creativity Based On The Laws of Systems Development</a></li>
+<li class="chapter" data-level="18.3.3" data-path="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html"><a href="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html#systems-inertia-in-creativity-and-innovation"><i class="fa fa-check"></i><b>18.3.3</b> Systems Inertia In Creativity And Innovation</a></li>
+<li class="chapter" data-level="18.3.4" data-path="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html"><a href="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html#creatology-a-science-for-the-twenty-first-century"><i class="fa fa-check"></i><b>18.3.4</b> Creatology: A Science For The Twenty-First Century</a></li>
+<li class="chapter" data-level="18.3.5" data-path="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html"><a href="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html#the-renewal-in-creative-thinking-process-for-problem-solving-and-decision-making"><i class="fa fa-check"></i><b>18.3.5</b> The Renewal In Creative Thinking Process For Problem Solving And Decision Making</a></li>
+<li class="chapter" data-level="18.3.6" data-path="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html"><a href="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html#dialectical-systems-thinking-for-problem-solving-and-decision-making"><i class="fa fa-check"></i><b>18.3.6</b> Dialectical Systems Thinking for Problem Solving and Decision Making</a></li>
+<li class="chapter" data-level="18.3.7" data-path="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html"><a href="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html#on-the-basic-program-creativity-methodologies-for-problem-solving-and-decision-making-being-taught-by-the-cstc-center-for-scientific-and-technical-creativity-in-vietnam"><i class="fa fa-check"></i><b>18.3.7</b> On the Basic Program “Creativity Methodologies for Problem Solving and Decision Making” Being Taught by the CSTC (Center For Scientific and Technical Creativity) in Vietnam</a></li>
+<li class="chapter" data-level="18.3.8" data-path="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html"><a href="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html#enlarging-triz-and-teaching-enlarged-triz-for-the-large-public"><i class="fa fa-check"></i><b>18.3.8</b> Enlarging TRIZ and Teaching Enlarged TRIZ for The Large Public</a></li>
+<li class="chapter" data-level="18.3.9" data-path="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html"><a href="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html#my-experiences-with-my-teacher-genrikh-saulovich-altshuller"><i class="fa fa-check"></i><b>18.3.9</b> My Experiences with My Teacher Genrikh Saulovich Altshuller</a></li>
+<li class="chapter" data-level="18.3.10" data-path="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html"><a href="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html#are-methodologies-of-creativity-really-useful-for-you-as-a-teacher-of-creativity"><i class="fa fa-check"></i><b>18.3.10</b> Are Methodologies of Creativity Really Useful for You As a Teacher of Creativity?</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html"><a href="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html#tiếng-việt"><i class="fa fa-check"></i>TIẾNG VIỆT:</a></li>
+<li class="chapter" data-level="" data-path="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html"><a href="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html#tiếng-anh"><i class="fa fa-check"></i>TIẾNG ANH:</a></li>
+<li class="chapter" data-level="" data-path="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html"><a href="chương-17-phương-pháp-luận-sáng-tạo-và-đổi-mới-những-điều-muốn-nói-thêm.html#tiếng-nga"><i class="fa fa-check"></i>TIẾNG NGA:</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">SÁNG TẠO VÀ ĐỔI MỚI (TRIZ)</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="sáng-tạo-một-cách-tự-nhiên" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chương 3</span> SÁNG TẠO MỘT CÁCH TỰ NHIÊN<a href="sáng-tạo-một-cách-tự-nhiên.html#sáng-tạo-một-cách-tự-nhiên" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="sec:2:1:" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Tư duy sáng tạo: nghịch lý, nghịch lý và nghịch lý<a href="sáng-tạo-một-cách-tự-nhiên.html#sec:2:1:" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Theo triết học, có ba lĩnh vực loài người cần nhận thức và biến đổi để thỏa mãn các nhu cầu của mình là tự nhiên, xã hội và tư duy. Sự phân loại này cho thấy, tư duy là lĩnh vực đứng ngang hàng với các lĩnh vực tự nhiên và xã hội chứ không phải thuộc tự nhiên hay xã hội, mặc dù nó có liên hệ mật thiết với tự nhiên và xã hội. Tư duy (hay còn gọi suy nghĩ) theo quan điểm hiện nay, chỉ duy nhất con người mới có, là hoạt động cao cấp của bộ não – dạng vật chất tổ chức đặc biệt, đạt được nhờ sự tiến hóa của tự nhiên. Đối với câu hỏi: “<em>Cái gì của con người làm cho con người chiếm ưu thế hơn hẳn các loài vật khác?</em>”, chắc chắn mọi người trả lời rằng: “Cái đó là tư duy”. Nếu hỏi tiếp: “<em>Thế tư duy để làm gì?</em>” Câu trả lời: “<em>Tư duy để sáng tạo, để đưa ra những giải pháp giải quyết vấn đề, những quyết định cần thực hiện</em>”.</p>
+<p>Trong thực tế có những điều thấy không hợp lý mà vẫn tồn tại, có khi dai dẳng. Người ta thường gọi chúng là những nghịch lý. Trong lĩnh vực tư duy cũng tồn tại không ít các nghịch lý. Dưới đây, người viết sẽ trình bày một số nghịch lý đó. Chúng không đứng độc lập mà đan quyện lẫn nhau hoặc cái này kéo theo cái kia.</p>
+<hr />
+<p>Rất quan trọng &gt;&lt; Không được chú ý xứng đáng</p>
+<hr />
+<p>Trong xã hội, cũng như trong tự nhiên, thường cái gì rất quan trọng thì cái đó được đặc biệt đầu tư để gìn giữ và phát triển. Ví dụ, trong xã hội, các cơ quan, tổ chức, ngành nghề, con người quan trọng đều được ưu tiên xứng đáng. Hay như trong tự nhiên, bộ não, do tầm quan trọng của nó mà chọn lọc tự nhiên đã “đầu tư” hẳn một hộp sọ rất cứng để bảo vệ và cung cấp một lượng máu dồi dào hơn hẳn các bộ phận khác của cơ thể.</p>
+<p>Bạn đọc thử tưởng tượng, nếu con người không có tư duy thì sao? Con người chắc chắn chỉ là một trong các loài động vật hoang dã. Nhờ tư duy sáng tạo, loài người từ chỗ có các khả năng sinh học rất hạn chế (con người không khỏe như voi, nhanh như báo, bay như chim, có vũ khí đặc biệt như nọc độc của rắn…) đến chỗ chiếm ưu thế tuyệt đối trong tự nhiên, thực hiện những kỳ tích chưa từng có trên Trái Đất để có được nền văn minh rực rỡ như ngày nay. Như vậy, tư duy rất quan trọng, nếu như không nói là quyết định trong quá trình tiến hóa và phát triển của con người và xã hội loài người. Tuy nhiên ở đây có nghịch lý: Tư duy rất quan trọng nhưng lĩnh vực tư duy không được loài người đối xử và đầu tư để phát triển một cách xứng đáng. Vậy nhân loại tập trung đầu tư vào đâu?</p>
+<hr />
+<p>Trong &gt;&lt; Ngoài</p>
+<hr />
+<p>Nếu so sánh ba lĩnh vực tự nhiên, xã hội và tư duy về số lượng những người làm việc, nghiên cứu, số công trình công bố, số tiền đầu tư… chúng ta có thể thấy những gì nhân loại dành cho lĩnh vực tư duy là không đáng kể. Dale Carnegie nhớ lại, ông cần có quyển sách về cách chiến thắng sự lo âu, phiền muộn (phần lớn là do suy nghĩ không hiệu quả – người viết). Ông vào thư viện công cộng lớn của New York nằm trên Đại lộ 5 và phố 42. Ông hết sức ngạc nhiên khi thấy vỏn vẹn có 22 quyển sách dưới tiêu đề “<em>Lo âu, phiền muộn</em>” (Worry). Trong khi đó, dưới tiêu đề “<em>Giun</em>” (Worms) ông tìm được tới 189 quyển, tức nhiều gần gấp chín lần. Bạn đọc còn có thể hình dung tiếp, trong tự nhiên, ngoài loài giun còn biết bao loài khác, không chỉ động vật còn thực vật, không chỉ thế giới hữu cơ, còn thế giới vô cơ… Tương tự, trong xã hội cũng có biết bao đối tượng mà loài người đều nghiên cứu và viết sách về chúng thì sự chênh lệch còn tăng gấp nhiều lần nữa.</p>
+<p>Trong các giải thưởng lớn trên thế giới, kể cả giải Nobel, bạn đọc có thể kể tên giải thưởng nào được dành riêng cho lĩnh vực tư duy không? Điều này còn có nghĩa, nhân loại quan tâm kết quả tư duy (các phát minh, sáng chế…) hơn là quá trình suy nghĩ dẫn đến những kết quả đó. Rõ ràng, nhân loại quá thờ ơ với những gì thuộc lĩnh vực tư duy mà chú ý nhiều hơn đến hai lĩnh vực kia: Tự nhiên và xã hội. Nếu coi tư duy thuộc thế giới bên trong con người, tự nhiên và xã hội là thế giới bên ngoài thì nhân loại chú ý “<em>trong</em>” ít hơn “<em>ngoài</em>”. Do vậy, trên thực tế, nhân loại biết rất nhiều về thế giới xung quanh nhưng lại biết rất ít về chính bản thân mình, đặc biệt, những gì xảy ra trong bộ não. Đến nỗi, có nhà nghiên cứu phải thốt lên rằng: “<em>Vùng không gian mà loài người biết ít nhất là khoảng cách giữa hai lỗ tai</em>”. Nguyễn Du viết: “<em>Bên trong có ấm thì ngoài mới êm</em>”. Có lẽ, không ít các vấn đề nảy sinh ở mức độ cá nhân, tập thể, quốc gia và toàn cầu có nguyên nhân sâu xa do nghịch lý “<em>trong</em>” và “<em>ngoài</em>” này mà lẽ ra phải có sự tương hợp giữa chúng. Maxwell cũng cảnh báo: “<em>Đề tài nghiên cứu chân chính dành cho nhân loại chính là con người</em>”. T. Edison nhấn mạnh: “<em>Nhiệm vụ quan trọng nhất của nền văn minh là dạy con người biết suy nghĩ</em>”. Còn C. Darwin cho rằng: “<em>Giai đoạn phát triển cao nhất trong văn hóa đạo đức là khi chúng ta nhận ra rằng chúng ta cần phải điều khiển các suy nghĩ của chính mình</em>”.</p>
+<hr />
+<p>Thô sơ, năng suất, hiệu quả thấp, điều khiển kém &gt;&lt; Hiện đại, năng suất, hiệu quả cao, điều khiển tốt</p>
+<hr />
+<p>Con người là động vật lao động bằng các công cụ (hiểu theo nghĩa rộng nhất) do chính con người chế tạo ra. Chúng thường xuyên được hoàn thiện, cải tiến, đổi mới tạo nên khuynh hướng phát triển: công cụ ra đời sau có năng suất, hiệu quả, độ tin cậy, tính điều khiển… cao hơn cái trước. Nói cách khác, các công cụ lao động của con người càng ngày, càng trở nên hiện đại. Ví dụ, nếu như trước đây người ta xúc đất bằng xẻng thì nay bằng máy xúc với năng suất cao hơn nhiều lần. Để báo tin cho một người nào đó, đã có thời người ta phải lóc cóc đạp xe đến tận nơi thì nay dùng điện thoại nhanh hơn nhiều. Thay vì phải dùng những con dao kim loại cồng kềnh, nay các bác sỹ có tia laser cho phép thực hiện các cuộc giải phẫu đòi hỏi độ chính xác cực kỳ cao. Ngày xưa, đã là giỏi lắm khi người ta tính được một phép tính trong một giây thì nay đã có những máy tính cho phép thực hiện nhiều tỷ phép tính một giây…</p>
+<p>Nhân loại với các công cụ do mình tạo ra không chỉ điều khiển dòng chảy của những dòng sông, các quá trình biến đổi ở mức nguyên tử, hạt nhân, các chuyến bay vũ trụ mà còn điều khiển cả việc tạo ra các giống loài mới. Những công cụ này đều có thể dạy, học cách chế tạo và sử dụng chúng để truyền cho những người khác.</p>
+<p>Trong khi những điều kể trên là bình thường đối với hai lĩnh vực tự nhiên và xã hội thì trong lĩnh vực tư duy, công cụ để có được những ý tưởng sáng tạo vẫn còn ở trong giai đoạn “<em>trời cho thế nào thì dùng thế ấy và cũng không biết hình hài của công cụ đó ra sao</em>” vì tư duy là đối tượng không nhìn thấy. Nhiều người còn cho rằng tư duy sáng tạo là đối tượng không điều khiển được.</p>
+<p>G.S. Altshuller nhận xét về nghịch lý này như sau: _“Ý tưởng về điều khiển một cái gì đó hiện nay chưa điều khiển được vẫn được tiếp nhận một cách bình thường. Chúng ta sẽ tìm ra phương tiện điều khiển nó, chúng ta sẽ điều khiển nó. Nhưng ý tưởng về việc điều khiển quá trình sáng tạo, như là quy tắc, luôn gặp sự chống đối quyết liệt_”.</p>
+<p>Nói cách khác, công cụ hiện nay dùng trong lĩnh vực tư duy sáng tạo còn rất thủ công mò mẫm, thô sơ theo kiểu: Cứ nghĩ đi, làm đi, thua keo này, bày keo khác cho đến bao giờ thành công thì thôi với năng suất, hiệu quả, độ tin cậy, tính điều khiển thấp và khó truyền đạt “<em>bí quyết</em>” của mình cho những người khác để họ có thể nghĩ theo cách đó cũng có những sáng tạo tốt. Nhưng cũng chính tư duy – công cụ không nhìn thấy và rất thô sơ ấy lại quyết định những cái nhìn thấy và cho ra đời những công cụ và thành tựu hiện đại nhất.</p>
+<hr />
+<p>Thông minh &gt;&lt; Ít có kết quả sáng tạo</p>
+<hr />
+<p>Có giai thoại sau liên quan đến tư duy sáng tạo. Montaigne, nhà triết học Pháp nói với những người xung quanh: “<em>Thượng đế ban phát cho loài người rất nhiều thứ không công bằng. Riêng về trí thông minh thì ai cũng như ai</em>”. Mọi người đề nghị ông giải thích. Ông trả lời: “<em>Các bạn để ý mà xem, có người khỏe, có người yếu; có người mập, có người gầy; có người cao, có người thấp; có người đẹp, có người không đẹp;… Nhưng có ai tự nhận mình là ngu đâu và nếu như ai bị người khác mắng là ngu, người đó sẽ tức điên lên ấy chứ. Điều này chứng tỏ ai cũng thông minh như ai</em>”.</p>
+<p>Câu nói tưởng là đùa của Montaigne phản ánh một sự thật được hầu hết các nhà nghiên cứu công nhận. Đó là, tiềm năng sáng tạo của bộ óc mỗi người bình thường (không bị các khuyết tật về não) cực kỳ lớn, đến nỗi, có nhà khoa học nói: “<em>Trong mỗi người có một thiên tài ngủ quên</em>”. Có cách nào đánh thức thiên tài trong mỗi người tỉnh dậy và hoạt động để kết quả sáng tạo của mỗi người tương xứng với tiềm năng thông minh vốn có? Làm sao biến tiềm năng thành hiện thực?</p>
+<hr />
+<p>Rẻ &gt;&lt; Đắt</p>
+<hr />
+<p>Một loại máy tính hoạt động rất phí phạm vì chưa dùng hết khả năng của chúng, mặc dù có một loạt ưu điểm vượt trội so với máy tính hiện đại nhất hiện nay:</p>
+<ul>
+<li><p>Không cần lập công ty thiết kế, chế tạo và sản xuất mà vẫn có máy tính để dùng.</p></li>
+<li><p>Phổ biến đến mức, ai cũng có và có rất sớm ngay từ khi bắt đầu cuộc đời.</p></li>
+<li><p>Rất nhẹ, khoảng hơn kilôgram và luôn luôn đi theo chủ thành ra không sợ để quên đâu đó.</p></li>
+<li><p>Có khả năng tàng hình nên người chủ tha hồ sử dụng máy tính đó một cách thoải mái mà không ai biết, kể cả ở những nơi cấm sử dụng máy tính thông thường.</p></li>
+<li><p>Luôn được giấu kín ở nơi mà không ai có thể đột nhập để lấy trộm được.</p></li>
+<li><p>Phần cứng lý tưởng đến mức người chủ không phải bận tâm về việc “lên đời”.</p></li>
+<li><p>Bảo mật cực tốt, các tin tặc chỉ có nước ngồi khóc.</p></li>
+<li><p>Tự động nạp năng lượng làm việc, không phụ thuộc vào máy phát điện, điện lưới, pin, ắc-quy…</p></li>
+<li><p>Thời gian hoạt động trung bình 60 – 70 năm mà không phải bảo trì, sửa chữa, thay thế.</p></li>
+<li><p>Sử dụng để giải quyết các loại vấn đề mọi nơi, mọi lúc, thường xuyên hơn bất kỳ loại máy tính nào khác.</p></li>
+<li><p>Có khả năng phát các ý tưởng sáng tạo mà lĩnh vực trí tuệ nhân tạo không biết bao giờ mới có thể bén gót.</p></li>
+<li><p>Chính nó giúp chế tạo ra các loại máy tính khác nói riêng và tất cả các công cụ lao động của con người nói chung.</p></li>
+<li><p>Giá máy rẻ không ngờ vì ai cũng được cha, mẹ tặng, không mất tiền mua.</p></li>
+</ul>
+<p>Bạn đọc đã đoán ra “<em>máy tính vượt trội</em>” vừa nói chính là bộ óc của mỗi người bình thường. Thật là lạ khi thấy người ta theo đuổi những máy tính điện tử cùng các phần mềm đắt tiền mà chưa chú ý khai thác các ưu việt của loại máy tính cực rẻ này bằng cách viết các “<em>phần mềm</em>” thích hợp cho nó.</p>
+<hr />
+<p>Học ít, dùng nhiều &gt;&lt; Học nhiều, dùng ít</p>
+<hr />
+<p>Suốt cuộc đời, mỗi người chúng ta dùng suy nghĩ rất nhiều, nếu như không nói là hàng ngày. Từ việc trả lời những câu hỏi bình thường như “<em>Hôm nay ăn gì? Mặc gì? Làm gì? Mua gì? Xem gì? Đi đâu?</em>…” đến làm các bài tập thầy, cô cho khi đi học; chọn ngành nghề đào tạo; lo công ăn, việc làm, sức khỏe, thu nhập, hôn nhân, nhà ở; giải quyết các vấn đề nảy sinh trong công việc, trong quan hệ xã hội, gia đình, nuôi dạy con cái…, tất tần tật đều đòi hỏi phải suy nghĩ và chắc rằng ai cũng muốn làm sao mình suy nghĩ tốt để ra những quyết định đúng. Mặc dù đâu đó chúng ta nghe thấy những lời mang tính khẳng định kiểu, học toán học là học suy nghĩ lôgích, chính xác; các môn triết học, khoa học tự nhiên và xã hội giúp hình thành thế giới quan, nhân sinh quan là điều rất cần thiết để có tư duy đúng; chơi cờ là hình thức rất tốt để luyện tập suy nghĩ; văn học, nghệ thuật và giáo dục thẩm mỹ đem lại nhiều tình cảm đẹp, tạo cảm hứng tốt cho các hoạt động trí óc… Nhưng rõ ràng, chúng ta không được học môn trực tiếp về tư duy để sáng tạo, để giải quyết các vấn đề nảy sinh trong cuộc đời của mỗi chúng ta. Ngay cả khoa học có phần chuyên ngành nghiên cứu tư duy là tâm lý học cũng rất ít người được học.</p>
+<p>Trong khi đó, suốt cuộc đời, chúng ta phải học rất nhiều môn trong nhà trường, nhiều điều ngoài nhà trường, chủ yếu về hai lĩnh vực tự nhiên và xã hội. Nhưng xem ra những gì chúng ta được học nhiều lại dùng rất ít trong cuộc sống và công việc. Nếu bạn đọc hiện nay đang đi làm, bạn càng có điều kiện để chiêm nghiệm điều đó. Chẳng hạn, từ khi bạn đi làm đến nay, ngoài một số kiến thức nghiệp vụ thuộc nghề của bạn, bạn đã bao nhiêu lần dùng những kiến thức khi học trong trường phổ thông thôi (chưa nói những kiến thức khác sâu hơn) như hằng đẳng thức đáng nhớ, giải phương trình bậc nhất, bậc hai, lấy đạo hàm, ba định luật của Newton, cân bằng phương trình của các phản ứng hóa học…</p>
+<p>Nghịch lý <em>học ít, dùng nhiều</em> và ngược lại <em>học nhiều, dùng ít</em>, đặc biệt trong thời đại bùng nổ thông tin, tri thức, đang là vấn đề được nhiều nhà giáo dục trên thế giới báo động và dành nhiều nỗ lực để giải quyết.</p>
+<p>Tổng kết mục này, có thể nói rằng, cho đến thời gian gần đây, nhân loại đối xử với tư duy không khác gì đối xử với tự nhiên ở thời kỳ nguyên thủy săn bắn và hái lượm: sử dụng những kết quả tư duy sáng tạo có sẵn của các cá nhân trong xã hội, tương tự như sử dụng thú rừng và cây trái có sẵn trong tự nhiên mà chưa chuyển sang giai đoạn đầu tư “<em>nghiên cứu</em>”, “<em>nuôi trồng</em>”, “<em>cải tiến</em>” nhằm chế tạo các công cụ lao động trí óc hiện đại với năng suất, hiệu quả, tính điều khiển cao, để mỗi người bình thường có thể khai thác và biến tiềm năng sáng tạo to lớn của mình thành hiện thực một cách tin cậy.</p>
+</div>
+<div id="sec:2:2:" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Phương pháp thử và sai (Trial and Error Method)<a href="sáng-tạo-một-cách-tự-nhiên.html#sec:2:2:" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Bình thường mà nói, người ta không phải lúc nào cũng muốn suy nghĩ, vì thật tình, suy nghĩ mệt óc và tốn nhiều năng lượng lắm. Quá trình suy nghĩ thường chỉ bắt đầu khi người ta có một vấn đề gì đó cần giải quyết hoặc cần ra một quyết định.</p>
+<p>Thực tế cho thấy, đa số mọi người suy nghĩ giải quyết vấn đề và ra quyết định một cách tự nhiên: người suy nghĩ hiếm khi suy nghĩ về cách suy nghĩ của chính mình, cũng giống như người ta hít thở, đi lại… một cách tự nhiên mà ít khi suy nghĩ về chúng và tìm cách cải tiến chúng. Vậy cách suy nghĩ tự nhiên này diễn ra như thế nào?</p>
+<p>Nghiên cứu và làm các thí nghiệm về quá trình suy nghĩ sáng tạo, các nhà tâm lý mô tả: thông thường, khi có vấn đề, người giải hiểu nó không thật kỹ. Dựa trên các kinh nghiệm, sự liên tưởng, liên quan đến những dữ kiện của vấn đề cần giải quyết có phần tương tự với những bài toán đã giải trước đó, người giải nghĩ ngay đến việc áp dụng các lời giải, ý tưởng và cách tiếp cận sẵn có trong trí nhớ. Người giải tiến hành các phép thử đầu tiên. Sau khi phát hiện những phép thử đó sai, người giải quay trở lại với đầu bài toán, cố gắng hiểu bài toán đúng hơn rồi tiếp tục đưa ra các ý tưởng khác và quyết định thực hiện ngay chúng để xem có phải là lời giải không. Kiến thức đã học và kinh nghiệm riêng của người giải luôn có khuynh hướng đưa người giải đi theo con đường mòn, đã hình thành trong não trước đó. Nếu các phép thử lại tiếp tục sai, người giải mất tự tin dần, mặc dù người giải cố gắng rút kinh nghiệm sau mỗi lần sai. Các phép thử mới trở nên lộn xộn hơn, nhiều khi, chúng được đưa ra không ăn nhập gì với bài toán cho trước. Nếu các phép thử này vẫn tiếp tục sai thì người giải có thể trở nên hoang mang và làm các phép thử theo kiểu mò mẫm, hú họa dựa trên việc đặt các câu hỏi đại loại như: “<em>Nếu ta làm thế này thì sao?”, ”Nếu ta làm thế kia thì sao?</em>”… và rất mong có linh tính hoặc giác quan thứ sáu hoặc sự may mắn nào khác mách bảo ý tưởng giải bài toán. Khi số các phép thử trở nên quá nhiều mà bài toán vẫn không giải ra, người giải có thể cho rằng bài toán không đủ điều kiện để giải hoặc kiến thức của mình còn thiếu, cần tìm sự trợ giúp từ bên ngoài. Người giải có khi không còn tập trung chú ý giải nữa mà nhường cho người khác. Thường thường, để giải bài toán phải tốn khá nhiều phép thử – sai (bài toán càng khó, số phép thử – sai càng lớn) để cuối cùng có phép thử là lời giải đúng. Mặc dù giải được bài toán, nhiều khi người giải không lý giải được một cách lôgích vì sao mình có được ý tưởng đúng và thường trả lời một cách chung chung kiểu: nghĩ mãi thì nó bật ra hoặc do may mắn, ngẫu hứng, linh tính…</p>
+<p>Cách suy nghĩ và hành động thực hiện giải bài toán theo mô tả ở trên gọi là phương pháp thử và sai (Trial and Error Method) và được minh họa bằng Hình 3: Bài toán và lời giải được ký hiệu bằng hai điểm khác nhau trên mặt phẳng. Các mũi tên diễn tả các phép thử. Trên thực tế, số lượng các phép thử sai có thể lớn hơn nhiều vì phương pháp thử và sai có mặt tại bất kỳ giai đoạn nào của quá trình thực hiện giải bài toán.</p>
+<p>Bạn đọc có thể nhận ra phương pháp thử và sai khi nhớ lại thời đi học mình giải các bài toán như thế nào hoặc đọc báo chí thấy các hiện tượng xây rồi đập, nhập rồi tách, tách rồi nhập, quyết định sau sửa quyết định trước trong một thời gian rất ngắn, cấm rồi cho, cho rồi cấm và nhiều thứ cứ phải sửa đi sửa lại mà vẫn không đạt. Thử và sai thành hiện tượng xã hội, nhiều đến nỗi, trên báo Lao Động Xuân 1998 có đăng vế ra đã có từ nhiều năm trước “<em>Sai đâu sửa đó, sai đó sửa đâu, sửa đâu sai đó” và vế đối của nhà giáo lão thành Nguyễn Tài Đại, Nghệ An: ”Lấy thu bù chi, lấy chi bù thu, bù thu lấy chi</em>”.</p>
+<div class="figure">
+<img src="Im_book1/55.png" alt="" />
+<p class="caption">Hình 3: Phương pháp thử và sai (Trial and Error Method)</p>
+</div>
+<p>Ngay đối với các nhà nghiên cứu, rất nhiều các phát minh, sáng chế của họ ra đời cũng bằng phương pháp thử và sai. Cho đến nay, Edison vẫn là người có nhiều sáng chế nhất: 1.093 patent và được mệnh danh là người có thể sáng chế ra mọi thứ. Nhà sáng chế Nikola Tesla có một thời gian cùng làm việc với Edison, kể lại: “<em>Nếu như Edison cần phải tìm cái kim rơi xuống đống rơm, ông sẽ không mất thời gian để xác định xem khả năng lớn nhất cái kim có thể nằm ở đâu. Không chậm trễ, với sự siêng năng, vội vã của con ong, ông lần lượt xem xét từng cọng rơm một cho tới khi tìm thấy cái kim thì thôi. Cách làm việc của ông rất kém hiệu quả: Ông có thể bỏ ra rất nhiều thời gian và sức lực mà không thu được gì, nếu không phải là sự tình cờ may mắn giúp ông ta</em>”. Khi Edison có ý định làm đèn phát sáng nhờ sự đốt nóng, ông đã thực hiện hơn 9.000 thí nghiệm và câu nói cửa miệng của ông là: “<em>Tôi sẽ thử mọi thứ, kể cả miếng phó mát Limburger</em>”. Để sáng chế ra ắc-quy kiềm, Edison đã phải làm tới 50.000 thí nghiệm, chưa kể tới những phương án trong đầu ông kiểu “Nếu ta thử làm thế này thì sao?” Ông cũng công nhận, trung bình một sáng chế lớn của ông phải làm mất bảy năm. Không phải ngẫu nhiên, chính Edison giải thích: “<em>Trong các công trình của tôi 99% là mồ hôi và chỉ 1% là cảm hứng</em>”. Tuy nhiên, Edison không làm việc một mình mà tập thể lớn đến ngàn người thực hiện việc thử theo sự phân công của ông.</p>
+<p>G.S. Altshuller có nêu nhiều minh họa về phương pháp thử và sai, ví dụ, ở Liên Xô, có lần đã thực hiện một thí nghiệm độc đáo. Người ta tập trung khoảng 60 nhà sáng chế thuộc các ngành nghề khác nhau và đề nghị họ cùng giải một bài toán. Kết quả: Không ai giải được. Nhưng điều thú vị là ở chỗ xem họ giải như thế nào? Thì ra họ cũng đi tìm lời giải một cách mò mẫm, thử lần lượt hết phương án này đến phương án khác không định hướng.</p>
+<p>Bạn đọc thử tưởng tượng sân bay với lịch bay 150 chuyến một ngày. Hành khách đã yên vị trên các ghế ngồi, bảng điện bật sáng dòng chữ “<em>Không hút thuốc! Đề nghị quý khách cài dây an toàn</em>!” Nhưng trong 100 chuyến bay, các cô tiếp viên hàng không duyên dáng, lịch sự thông báo: “<em>Thành thật xin lỗi quý khách, rất tiếc, chuyến bay phải bãi bỏ do trục trặc kỹ thuật</em>”. 50 máy bay còn lại cất cánh được, nhưng liền sau đó 49 chiếc phải hạ cánh ngay và chỉ có một chiếc bay đến được đúng thành phố mà nó cần đến.</p>
+<p>Bạn đọc chắc sẽ phản đối: <em>“Làm gì có sân bay như vậy!”</em> Vâng, đúng là không có sân bay như vậy.</p>
+<p>Bạn đọc thử tưởng tượng một công ty xây dựng, được cung cấp đủ nguyên vật liệu và phương tiện để hàng năm xây 150 tòa nhà cao tầng. Cuối mỗi năm, báo cáo cho biết, 100 tòa nhà bị sập ngay trong quá trình thi công, 49 tòa nhà khác chỉ có thể dùng vài tầng dưới và chỉ một tòa nhà được nghiệm thu đạt yêu cầu.</p>
+<p>Bạn đọc lại phản đối: “<em>Làm gì có công ty xây dựng như thế!</em>” Vâng, đúng là không có công ty xây dựng như thế.</p>
+<p>Nhưng trong lĩnh vực sáng tạo nói chung, tư duy sáng tạo nói riêng, độ tin cậy và tính điều khiển thấp do không có các công cụ tư duy sáng tạo tốt lại khá phổ biến. Dưới đây xin trích những dòng từ bài báo của Chủ tịch Hội đồng trung ương “<em>Hội các nhà sáng chế và hợp lý hóa toàn liên bang</em>”, Liên Xô trước đây: “<em>Hàng năm, ở nước ta thực hiện khoảng150.000 các nghiên cứu phát triển kỹ thuật mới. Gần hai phần ba số đó phải bỏ trong giai đoạn thí nghiệm hoặc thử nghiệm mẫu mới (do thử thấy sai – người viết), làm lãng phí rất nhiều vốn đầu tư của nhà nước. Trong số các nghiên cứu đến được giai đoạn áp dụng thì 85% chỉ dùng ở một hoặc hai nhà máy và chỉ 2% được dùng ở 5 nhà máy trở lên</em>”.</p>
+<p>Có những quyển sách về lịch sử các sáng chế, phát minh, về tiểu sử các nhà bác học. Nhiều thế hệ trẻ đã ngốn ngấu đọc chúng và mơ ước cũng có được những sáng chế, phát minh. Có thể rút ra được gì qua loại sách này khi công nghệ sản xuất các sáng chế, phát minh nói riêng, các sản phẩm sáng tạo nói chung, chủ yếu, là phương pháp thử và sai?</p>
+<p>Dưới đây là lời khuyên của một cuốn sách loại đó: “<em>Muốn thực hiện ước mơ, trước hết đòi hỏi phải có tri thức, kỹ năng lao động, tinh thần dám nghĩ, dám làm, khả năng không nản chí trước các khó khăn và thất bại tất yếu bày ra trước mặt. Nếu bạn trau dồi được tất cả các đức tính đó ở trong trường, trong công tác thì bạn sẽ có những ”vận may”, sẽ có được niềm vui sướng trước những thành công trong sáng tạo và sự kính trọng sâu sắc</em>”. Lời khuyên này trên thực tế không khác lời khuyên: “<em>Hãy ở hiền đi rồi sẽ gặp lành” hoặc ”Cần cù dùng số lượng bù cho khả năng</em>” chứ không trang bị cho người đọc các phương pháp, các kỹ năng cụ thể giúp nâng cao năng suất và hiệu quả quá trình sáng tạo và đổi mới.</p>
+<p>Có một điều may mắn: Lời giải các bài toán sau khi đã tìm ra bằng phương pháp thử và sai, được công bố, lưu trữ, phổ biến, đưa vào chương trình dạy trong các nhà trường để những người khác và các thế hệ sau sử dụng ngay, không phải đi giải lại chúng bằng phương pháp thử và sai. Đây là thuận lợi của người đi sau, nếu biết kế thừa (xem giai đoạn C: Tìm thông tin giải bài toán, mục <em><a href="mở-đầu.html#sec:1:2:">2.2</a> Một số khái niệm cơ bản và các ý nghĩa của chúng</em>). Rất tiếc, có những bài toán là những bài toán mà các nước đi trước đã gặp, đã giải, thay vì kế thừa, nhiều người có trách nhiệm ở nước ta đi giải lại một cách mò mẫm thử và sai. Ví dụ các bài toán về quy hoạch, kẹt xe, ô nhiễm môi trường, xử lý chất thải, các sinh vật lạ nhập từ nước ngoài…</p>
+</div>
+<div id="sec:2:3:" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Các ưu và nhược điểm của phương pháp thử và sai<a href="sáng-tạo-một-cách-tự-nhiên.html#sec:2:3:" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Các bài toán thực tế thường có nhiều lời giải. Ví dụ, nhà, xe, đèn, bút, dao, đồ ăn, thức uống… rất đa dạng chứ không phải chỉ có một loại. Do vậy, một bài toán thường có nhiều phép thử, đồng thời có nhiều lời giải. Loại bài toán có một và chỉ một lời giải mà thôi là rất hiếm. Tương tự như vậy, tình huống chỉ có một lối thoát cũng rất hiếm. Riêng ý này đã giúp chúng ta lạc quan khi phải đối mặt với các khó khăn trong cuộc sống.</p>
+<p>Ta lập tỷ số giữa “<em>tổng số các phép thử có thể có của bài toán cho trước</em>” và “<em>tổng số các lời giải có thể có của nó</em>” và gọi là α. Tỷ số α cho biết, trung bình α phép thử thì có một lời giải. Ví dụ α = 3 có nghĩa, trung bình cứ ba phép thử thì có một lời giải; α = 1000 thì trung bình một ngàn phép thử mới có một lời giải. Nói chung, α càng lớn thì bài toán càng khó giải và trả giá cho phương pháp thử và sai càng lớn.</p>
+<p>Dưới đây sẽ liệt kê một số ưu và nhược điểm của phương pháp thử và sai:</p>
+<div id="subsec:2:3:1:" class="section level3 hasAnchor" number="3.3.1">
+<h3><span class="header-section-number">3.3.1</span> Các ưu điểm của phương pháp thử và sai<a href="sáng-tạo-một-cách-tự-nhiên.html#subsec:2:3:1:" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>1. Phương pháp thử và sai trở thành phương pháp duy nhất và hầu như không cần phải học ở những tình huống vấn đề xuất phát chưa có tiền lệ. Hoặc khi các kinh nghiệm của người giải đã dùng hết mà vẫn sai và không thu thêm được thông tin có ích nào để định hướng. Lúc đó, người giải cứ việc thử khác đi một cách mò mẫm cho đến khi tìm ra lời giải.</p>
+<p>2. Phương pháp thử và sai hoàn toàn thích hợp đối với loại bài toán, ở đó α &lt; 10 và trả giá cho mỗi phép thử sai không đáng kể hoặc chấp nhận được. Lúc này, người giải khỏi dụng công tư duy sáng tạo gì ghê gớm, cứ việc thử lần lượt sẽ đi đến lời giải.</p>
+<p>3. Phương pháp thử và sai cũng hoàn toàn thích hợp để viết phần mềm giải loại bài toán có α rất lớn, nếu bài toán có thể mô phỏng được trên máy tính vì mỗi phép thử sai trên máy tính trả giá không đáng kể, trong khi tốc độ thử của máy tính rất cao.</p>
+<p>4. Trong phương pháp thử và sai có một ý rất quan trọng: ngoài các phép thử dựa trên kinh nghiệm đã có, còn có những phép thử mới trước đây chưa có. Dù chúng mang tính lộn xộn, mò mẫm, thiếu định hướng, khả năng sai lớn nhưng lại chứa một xác suất nhất định để trở thành lời giải. Với ý nghĩa như thế, nhiều nhà nghiên cứu cho rằng ưu điểm lớn nhất của phương pháp thử và sai: nó chính là cơ chế của sự tiến hóa và phát triển trong cả ba lĩnh vực tự nhiên, xã hội và tư duy cho đến thời gian gần đây.</p>
+<p>Phương pháp thử và sai dùng trong quá trình giải bài toán là phương pháp tự nhiên, ngoài việc hiểu theo nghĩa: người ta dùng nó một cách tự nhiên, không để ý, quan tâm; còn được hiểu theo nghĩa: phương pháp thử và sai đã có sẵn trong tự nhiên, trước khi con người xuất hiện trên Trái Đất. Ví dụ, các sinh vật trong tự nhiên, do sự thay đổi hoàn cảnh, môi trường sống (hiểu theo nghĩa rộng nhất), cũng gặp nhiều vấn đề và chúng giải quyết bằng cách thay đổi các tập tính, hành vi hoặc/và đột biến về gien, tức là thực hiện các phép thử khác đi so với quá khứ. Chọn lọc tự nhiên (cũng hiểu theo nghĩa rộng nhất) đào thải các phép thử sai, giữ lại các phép thử đúng là lời giải và chỉ có những sinh vật giải quyết được các vấn đề của mình mới sống sót, tiến hóa và phát triển đến nay.</p>
+</div>
+<div id="subsec:2:3:2:" class="section level3 hasAnchor" number="3.3.2">
+<h3><span class="header-section-number">3.3.2</span> Các nhược điểm của phương pháp thử và sai<a href="sáng-tạo-một-cách-tự-nhiên.html#subsec:2:3:2:" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>1) Lãng phí lớn</strong></p>
+<p>Hình 3 mô tả phương pháp thử và sai, cho thấy một nhược điểm đập ngay vào mắt: Số phép thử sai nhiều nên lãng phí lớn về thời gian, sức lực, trí lực, phương tiện vật chất, tài nguyên, tiền bạc và có khi cả số phận, sinh mạng các cá thể, giống loài. Theo ước đoán, trên Trái Đất đã từng xuất hiện hai tỷ loài nhưng chỉ có hai triệu trong số đó còn tồn tại đến ngày nay và tốc độ tiến hóa diễn ra rất chậm. Không phải ngẫu nhiên, có những nhà nghiên cứu đã thốt lên: “<em>Để có được sự tiến hóa, phát triển bằng phương pháp thử và sai, cái giá phải trả lớn hơn nhiều lần tổng thiệt hại do thiên tai như bão, lụt, hạn hán, động đất, vòi rồng… gây ra trên Trái Đất này</em>”. Phải chăng sáng tạo theo phương pháp thử và sai là kiểu sáng tạo “c_ó được cái mới, ích lợi nhờ sự hỗn độn” (Chaos)_, hoặc “<em>cấu trúc tự tổ chức nảy sinh từ sự hỗn độn</em>”.</p>
+<p>Cũng vì sau nhiều lần thử và sai mới có lời giải, chỉ những cá thể, giống loài nào có khả năng thử với số lượng lớn và đa dạng mới thích nghi với sự thay đổi và được chọn lọc tự nhiên giữ lại. Để chắc chắn thụ thai, trong một mililít tinh dịch của người đàn ông phải có khoảng ba trăm triệu tinh trùng trở lên. Ít hơn số lượng này, bài toán có nguy cơ không có lời giải. Tương tự như vậy, để không bị mất giống, các giống loài còn sống đến bây giờ đều phải có khả năng đẻ rất nhiều con trong một cuộc đời và mỗi đứa con là một phiên bản độc đáo, không lặp lại.</p>
+<p>Khả năng thử lớn và đa dạng của loài người, ngoài những cách như các sinh vật khác: biến dị, đẻ nhiều con, thay đổi hành vi… còn dựa trên tư duy sáng tạo, sáng chế ra và sử dụng các công cụ lao động ngày càng nhiều, càng đa dạng, càng hoàn thiện. Có lẽ, do tiềm năng thử rất lớn và đa dạng, do nhu cầu phải thể hiện tiềm năng đó ra, con người nói riêng và loài người nói chung yêu tự do, chán ghét những gì lặp đi, lặp lại và đơn điệu. Nói cách khác, bản chất con người – kết quả tiến hóa của tự nhiên – là sáng tạo. M.M. Prixvin có nhận xét rất sâu sắc: “<em>Nếu quá trình lao động được tự do, nó sẽ kết thúc bằng sáng tạo</em>”. A.N. Tôlxtôi kêu gọi: “<em>Trong con người vốn có những nguồn sáng tạo vô tận, nếu khác đi thì đã không thành người. Cần giải phóng và khơi thông chúng</em>”. Masatoshi Yoshimura còn gay gắt hơn: “<em>Việc không sử dụng được kho báu có trong mỗi người – sự sáng tạo, dù do vô tình không biết, dửng dưng hay cố tình giễu cợt, không chỉ là sự lãng phí: Đó là tự phản bội chính mình</em>”. A. Toynbee cũng có ý kiến tương tự: “<em>Tạo điều kiện thuận lợi cho tiềm năng sáng tạo là vấn đề sống còn của mỗi xã hội</em>”.</p>
+<p><strong>2) Tính ì tâm lý cản trở sáng tạo</strong></p>
+<p>Các phép thử đưa ra thường dựa trên kinh nghiệm có từ trước, nằm trong trí nhớ của người giải, đó là tác hại của tính ì tâm lý. Nó kéo suy nghĩ của người giải về phía quen thuộc đã biết (xem mũi tên đậm: véctơ ì tâm lý trên Hình 3), do vậy, cản trở người giải đưa ra các phép thử mới, có thể dẫn đến lời giải. Trên Hình 3, các phép thử không vẽ dàn đều về tất cả các hướng mà phần lớn tập trung quanh mũi tên đậm, phản ánh nhược điểm vừa nêu.</p>
+<p>Lối suy nghĩ và hành động “<em>kinh nghiệm chủ nghĩa</em>” không cho phép người giải định hướng một cách khách quan về phía lời giải. Chỉ sau nhiều lần thử sai, phải trả giá, người giải mới từ bỏ “<em>kinh nghiệm</em>” và thử khác đi cho đến lúc “<em>vận may</em>” (phép thử đưa đến lời giải) xuất hiện.</p>
+<p>Cũng do tính ì tâm lý, nhiều khi người giải không liệt kê được hết các phép thử có thể có của bài toán cho trước một cách khách quan. Nhiều bài toán không giải được không phải vì người giải thiếu kiến thức hoặc điều kiện mà vì không thắng được tính ì tâm lý của chính mình.</p>
+<p><strong>3) Năng suất phát ý tưởng thấp</strong></p>
+<p>Số ý tưởng phát ra trong một đơn vị thời gian (năng suất phát ý tưởng) của người giải thấp: có khi nghĩ cả ngày hoặc hơn mà không có ý tưởng để thử. Đối với các bài toán lạ, ví dụ không thuộc chuyên môn của mình, người giải có thể không đưa ra được phép thử nào. Năng suất phát ý tưởng thấp nên quá trình giải bài toán kéo dài về mặt thời gian.</p>
+<p><strong>4) Các tiêu chuẩn đánh giá “đúng”, “sai” hoặc không có hoặc có thì mang tính chủ quan và ngắn hạn.</strong></p>
+<p>Trong trường hợp không có các tiêu chuẩn khách quan đánh giá, người giải có được ý tưởng nào thì quyết định thực hiện ý tưởng đó luôn để thực tế trả lời “<em>đúng</em>” hay “<em>sai</em>”, chứ không phải phát hiện “<em>đúng</em>”, “<em>sai</em>” ngay ở giai đoạn còn là ý tưởng. Do “<em>sai</em>” nhiều hơn “<em>đúng</em>”, các thiệt hại về nhiều mặt rất lớn. Có nhiều giải pháp trong ngắn hạn tưởng là đúng, dùng dài hạn mới biết là sai. Các loại thuốc chữa bệnh cho lưu hành, thậm chí khuyến khích dùng, sau khi phát hiện các tác hại mới ra lệnh cấm là một trong các ví dụ.</p>
+<p><strong>5) Thiếu cơ chế định hướng từ bài toán đến lời giải</strong></p>
+<p>Khi gặp bài toán, người giải thường không định hướng ngay được lời giải bài toán nằm ở phía nào. Đây là nhược điểm cơ bản của phương pháp thử và sai vì nó là thủ phạm chính làm nảy sinh những nhược điểm khác. Bạn đọc thử tự lý giải thêm xem có phải như vậy không? Người viết còn quay trở lại vấn đề này.</p>
+<p>Ngoài các nhược điểm kể trên, còn có thể thấy các nhược điểm khác liên quan đến quá trình giải bài toán nói chung như:</p>
+<ul>
+<li><p>Không chủ động phát hiện, dự báo các bài toán có thể nảy sinh trong tương lai để hoặc ngăn ngừa không cho bài toán nảy sinh, hoặc chuẩn bị sẵn lời giải, hoặc biến bài toán thành cơ hội phát triển.</p></li>
+<li><p>Chỉ giải bài toán khi có nhu cầu cấp bách, không giải không được, kiểu “<em>nước ngập cổ mới tính đường nhảy</em>”, còn bình thường thì chấp nhận, chịu đựng.</p></li>
+<li><p>Không tính tiếp đến những hậu quả xấu có thể có do lời giải bài toán cho trước mang lại, do vậy, làm nảy sinh các vấn đề mới không đáng nảy sinh và bài toán cho trước, trên thực tế, chưa giải xong.</p></li>
+<li><p>Thường chỉ quan tâm giải các bài toán thuộc chuyên môn, nghiệp vụ của mình, trong đó có hiện tượng chỉ quan tâm đến những thông tin liên quan trực tiếp đến bài toán cho trước.</p></li>
+<li><p>Chỉ quan tâm tìm lời giải, đáp số mà không quan tâm đến quá trình suy nghĩ giải, phương pháp giải, lý lẽ hóa các bước giải, rút kinh nghiệm giải bài toán cho trước để giải các bài toán khác.</p></li>
+<li><p>Không phát triển bài toán cho trước thành các bài toán, đề tài nghiên cứu mới, thậm chí không đi tìm những cách giải khác của bài toán cho trước.</p></li>
+</ul>
+<p>Trong quyển sách tiếp theo, khi đi vào các giai đoạn cụ thể của quá trình suy nghĩ giải quyết vấn đề và ra quyết định, cùng các yếu tố và quá trình tâm lý hoạt động trong các giai đoạn đó, chúng ta còn thấy nhiều nhược điểm hơn nữa.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="mở-đầu.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="phương-pháp-luận-sáng-tạo-và-đổi-mới-là-gì-tại-sao.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/02-cross-refs.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
